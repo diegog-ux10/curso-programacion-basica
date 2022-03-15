@@ -1,0 +1,47 @@
+<!--
+Estructura HTML
+
+HTML está organizado como una colección de relaciones de árboles genealógicos. Como viste en la clase pasada, colocamos etiquetas <p> dentro de las etiquetas <body>. Cuando un elemento está contenido dentro de otro elemento, se considera hijo de ese elemento. Se dice que el elemento secundario está anidado dentro del elemento principal.
+
+<body>
+  <p>Este parafo es hijo de body</p>
+</body>
+
+En el ejemplo anterior, el elemento <p> está anidado dentro del elemento <body>. El elemento <p> se considera un elemento secundario del elemento <body> y el elemento <body> se considera el elemento principal. También puede ver que hemos agregado un espacio de sangría (usando la tecla de tabulación) para una mejor legibilidad.
+
+Dado que puede haber múltiples niveles de anidamiento, esta analogía se puede extender a nietos, bisnietos y más allá. La relación entre los elementos y sus elementos ancestros y descendientes se conoce como jerarquía.
+
+Consideremos un ejemplo más complicado que usa algunas etiquetas nuevas:
+
+´´´´
+<body>
+  <div>
+    <h1>Soy hermano de p, pero tambien nieto de body</h1>
+    <p>Soy hermano de h1, pero tambien hijo de div</p>
+  </div>
+</body>
+
+´´´´
+
+En este ejemplo, el elemento <body> es el padre del elemento <div>. Tanto los elementos <h1> como <p> son elementos secundarios del elemento <div>. Debido a que los elementos <h1> y <p> están en el mismo nivel, se consideran hermanos y ambos son nietos del elemento <body>.
+
+Comprender la jerarquía de HTML es importante porque los elementos secundarios pueden heredar el comportamiento y el estilo de su elemento principal. Aprenderá más sobre la jerarquía de la página web cuando comience a profundizar en CSS.
+
+-->
+
+
+
+
+<!--1. Agregue el párrafo a continuación como hija del elemento div.
+
+    <p>This paragraph is a child of the div element and a grandchild of the body element</p>
+
+-->
+
+<body>
+  <h1>Hello World</h1>
+  <p>This paragraph is a child of the body element</p>
+  <div>
+    <p>This paragraph is a child of the div element and a grandchild of the body element</p>
+  </div> 
+</body>
