@@ -1,0 +1,75 @@
+<!--
+Imágenes
+
+Todos los elementos que has aprendido hasta ahora (títulos, párrafos, listas y espacios) comparten una cosa en común: ¡están compuestos completamente de texto! ¿Qué sucede si desea agregar contenido a su página web que no esté compuesto de texto, como imágenes?
+
+La etiqueta <img> le permite agregar una imagen a una página web. La mayoría de los elementos requieren etiquetas de apertura y cierre, pero la etiqueta <img> es una etiqueta de cierre automático. Tenga en cuenta que el final de la etiqueta <img> tiene una barra diagonal /. Las etiquetas de cierre automático pueden incluir u omitir la barra inclinada final; ambas se procesarán correctamente.
+
+<img src="ubicación-de-imagen.jpg" />
+
+La etiqueta <img> tiene un atributo requerido llamado src. El atributo src debe establecerse en la fuente de la imagen o en la ubicación de la imagen. En este caso, el valor de src debe ser el localizador uniforme de recursos (URL) de la imagen. Una URL es la dirección web o la dirección local donde se almacena un archivo.
+
+-------------------------------------------------------------------------------------------
+
+Atributo Alt de imagen
+
+Parte de ser un desarrollador web excepcional es hacer que su sitio sea accesible para usuarios de todos los orígenes. Para hacer que la Web sea más inclusiva, debemos considerar qué sucede cuando las tecnologías de asistencia, como los lectores de pantalla, se encuentran con etiquetas de imágenes.
+
+El atributo alt, que significa texto alternativo, aporta significado a las imágenes de nuestros sitios. El atributo alt se puede agregar a la etiqueta de la imagen al igual que el atributo src. El valor de alt debe ser una descripción de la imagen.
+
+<img src="#" alt="Un campo de girasoles amarillos"></>
+El atributo alt también sirve para los siguientes propósitos:
+
+Si una imagen no se carga en una página web, el usuario puede pasar el mouse sobre el área originalmente destinada a la imagen y leer una breve descripción de la imagen. Esto es posible gracias a la descripción que proporciona en el atributo alt.
+Los usuarios con discapacidad visual a menudo navegan por la web con la ayuda de un software de lectura de pantalla. Cuando incluye el atributo alt, el software de lectura de pantalla puede leer la descripción de la imagen en voz alta para el usuario con discapacidad visual.
+
+El atributo alt también juega un papel en la optimización de motores de búsqueda (SEO), porque los motores de búsqueda no pueden "ver" las imágenes en los sitios web mientras rastrean Internet. Tener atributos alternativos descriptivos puede mejorar la clasificación de su sitio.
+
+Si la imagen en la página web no transmite ninguna información significativa a un usuario (discapacitado visual o no), el atributo alt debe dejarse vacío.
+
+-->
+
+
+<!--
+    EJERCICIO
+
+    1. Debajo del encabezado Medios <h2>, agregue una imagen. Use el siguiente valor como fuente (src) para la imagen:
+
+        ./assets/img/oso.jpg
+
+    2. Agregue el atributo alt a la imagen e incluya una descripción. Asegúrese de que la descripción describa con precisión la imagen.
+
+-->
+<body>
+    <h1>El oso pardo</h1>
+    <div id="introduccion">
+      <h2>Acerca de los osos pardos</h2>
+      <p>El oso pardo (<em>Ursus arctos</em>) es originario de partes del norte de Eurasia y América del Norte. Actualmente su estado de conservación es de <strong>Preocupación Menor</strong>.<br><br> Hay muchas subespecies dentro de la especie de oso pardo, incluido el oso Atlas y el oso pardo del Himalaya.</p>
+      <h3>Especies</h3>
+      <ul>
+        <li>Arctos</li>
+        <li>Collarus</li>
+        <li>Horribilis</li>
+        <li>Nelsoni (extinto)</li>
+      </ul>
+      <h3>Características</h3>
+      <p>Los osos pardos no siempre son completamente marrones. Algunos pueden ser rojizos o amarillentos. Tienen garras curvas muy grandes y patas enormes. Los osos pardos machos suelen ser un 30 % más grandes que las hembras. Pueden variar de 5 pies a 9 pies, de altura.</p>
+    </div>
+    <div id="habitat">
+      <h2>Hábitat</h2>
+      <h3>Países con grandes poblaciones de osos pardos</h3>
+      <ol>
+        <li>Rusia</li>
+        <li>Estados Unidos</li>
+        <li>Canadá</li>
+      </ol>
+      <h3>Países con pequeñas poblaciones de osos pardos</h3>
+      <p>Algunos países con poblaciones de osos pardos más pequeños incluyen Armenia, Bielorrusia, Bulgaria, China, Finlandia, Francia, Grecia, India, Japón, Nepal, Polonia, Rumania, Eslovenia, Turkmenistán y Uzbekistán</p>
+    </div>
+    <div id="medios">
+      
+      <h2>Medios</h2>
+      <img src="" alt="">
+    </div>
+</body>
+
