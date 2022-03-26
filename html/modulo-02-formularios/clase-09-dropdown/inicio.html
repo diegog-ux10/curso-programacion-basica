@@ -1,0 +1,109 @@
+<!--
+La lista desplegable
+
+Los botones de radio son geniales si queremos que nuestros usuarios elijan una opción entre algunas opciones visibles, ¡pero imagínense si tenemos una lista completa de opciones! Esta situación podría conducir rápidamente a una gran cantidad de botones de radio para realizar un seguimiento.
+
+Una solución alternativa es utilizar una lista desplegable para permitir que nuestros usuarios elijan una opción de una lista organizada. Aquí está el código para crear un menú desplegable:
+
+<form>
+  <label for="lunch">¿Qué hay para almorzar?</label>
+  <select id="almuerzo" name="almuerzo">
+    <option value="pizza">Pizza</option>
+    <option value="curry">Curry</option>
+    <option value="ensalada">Ensalada</option>
+    <option value="ramen">Ramen</option>
+    <option value="tacos">Tacos</option>
+  </select>
+</form>
+
+
+Y si hacemos clic en el campo que contiene la primera opción, se revela la lista: lista desplegable representada con todas las opciones que se muestran
+
+Observe en el código que estamos usando el elemento <select> para crear la lista desplegable. Para completar la lista desplegable, agregamos varios elementos <option>, cada uno con un atributo de valor. De forma predeterminada, solo se puede seleccionar una de estas opciones.
+
+El texto representado es el texto incluido entre las etiquetas <option> de apertura y cierre. Sin embargo, es el valor del atributo de valor que se utiliza en el envío de <form> (observe la diferencia en el texto y el valor de mayúsculas). Cuando se envía el <formulario>, la información de este campo de entrada se enviará utilizando el nombre de <select> y el valor de la opción elegida. Por ejemplo, si un usuario seleccionó Pizza de la lista desplegable, la información se enviaría como "almuerzo=pizza".
+-->
+
+<!--
+1. Ahora demos a nuestros usuarios una opción de salsas usando una lista desplegable.
+
+En el elemento <section> con una clase de "salsa" hay una <label> a la que podemos asociar un elemento <select>.
+
+Agregue un elemento <select> con un name de "salsa" y un id de "salsa".
+
+2. Dentro del elemento <select>, agregue 3 <option>.
+
+La primera opción debe tener un value de "BBQ y mostrar el texto BBQ en la página web.
+
+La segunda opción debe tener un value de "salsa de ajo" y mostrar el texto Salsa de Ajo en la página web.
+
+La tercera opción puede ser un value que tu elijas y mostrar texto relevante para el value (¡asegúrese de que no esté vacío!)
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <img src="https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt="Davie's Burgers Logo" id="logo">
+      <form action="./practice.html" method="POST">
+          <hr>
+          <h1>Pide tu hamburguesa</h1>
+          <p>Formulario para que puedas pedir tu hamburguesa como deseas</p>
+          <section class="proteina">
+            <label for="carne">¿Qué tipo de proteina te gustaria?</label>
+            <input type="text" name="carne" id="carne" value="mixto">
+          </section>
+          <hr>
+  
+          <section class="cantidad-de-carnes">
+            <label for="cantidad">¿Cuantas porciones quieres?</label>
+            <input type="number" name="cantidad" id="cantidad" step="5">        
+            
+          </section>
+          <hr>
+          <section class="termino">
+            <label for="cocinada">¿Que tan cocinado quieres tu proteina?</label>
+            <br>
+            <div class="rango">
+              <span>Cruda</span>
+              <input id="cocinada" name="cocinada" type="range" min="0" max="5" step="0.5">
+              <span>Bien cocida</span>
+            </div>
+          </section>
+          <section class="complementos">
+            <label>¿Que deseas agregarle a tu Hamburgesa?</label>
+            <div>
+            <br>
+            <label for="lechuga">Lechuga</label>
+                <input type="checkbox" name="complemento" id="lechuga" value="lechuga">
+                <label for="tomate">Tomate</label>
+                <input type="checkbox" name="complemento" id="tomate" value="tomate">
+                <label for="queso">Queso</label>
+                <input type="checkbox" name="complemento" id="queso" value="queso">
+            </div>  
+          </section>
+          <section class="papas">
+            <label>¿Quieres papas fritas con tu hamburguesa?</label>
+            <div>
+            <input type="radio" name="papas" id="si" value="si">
+              <label for="si">Si</label>
+              <input type="radio" name="papas" id="no" value="no">
+              <label for="no">No</label>
+            </div>
+
+          </section>
+          <section class="salsa">
+            <label for="salsa">¿Qué tipo de salsa quieres?</label>
+
+          </section>
+      </form>
+      
+    </section>
+  </body>
+</html>

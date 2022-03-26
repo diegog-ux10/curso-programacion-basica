@@ -1,0 +1,79 @@
+<!--
+Rango
+
+Usar un <input type="number"> es excelente si queremos permitir que los usuarios escriban cualquier número que elijan. Pero, si quisiéramos limitar los números que nuestros usuarios pueden escribir, podríamos considerar usar un valor de tipo diferente. Otra opción que podríamos usar es establecer el tipo en "rango", lo que crea un control deslizante.
+
+Para establecer los valores mínimo y máximo del control deslizante, asignamos valores al atributo mínimo y máximo de la <input>. También podríamos controlar qué tan suave y fluido funciona el control deslizante asignando un valor al atributo de step. Los valores de paso más pequeños harán que el control deslizante sea más fluido, mientras que los valores de paso más grandes harán que el control deslizante se mueva de forma más notoria. Eche un vistazo al código para crear un control deslizante:
+
+<form>
+  <label para="volumen"> Control de volumen</label>
+  <input id="volumen" name="volumen" ttype="rango" min="0" max="100" step="1">
+</form>
+
+Esta práctica tiene dos elementos nuevos y un atributo con el que quizás no estés familiarizado.
+
+<section>: un elemento que se utiliza para representar una sección independiente para la que no se puede encontrar un elemento más específico. Esto generalmente tiene un encabezado como elemento secundario. Una sección debe tener sentido en el esquema de un documento, mientras que <div> se usa para diseñar. Este es un elemento semántico del que aprenderá más en una lección posterior.
+
+class: un atributo global que tiene una lista de clases pertenecientes a un elemento. Verás que esto se usa con <section> en la práctica.
+
+<hr>:  Un elemento que se utiliza para una ruptura entre elementos a nivel de párrafo. Se muestra como una línea horizontal. Este también es un elemento semántico sobre el que aprenderá más en una lección posterior.
+
+-->
+
+<!--
+  EJERCICIOS:
+
+1. Démosle a nuestros usuarios una opción sobre cómo quieren cocinar sus carnes. Podemos hacer esto agregando un control deslizante al <form> existente.
+
+En la sección con class="termino", agregue un elemento <input>. Establezca wl id en "cocinada". Además, establezca el atributo type en "range".
+
+
+2. Para el <input> recién creado, establezca:
+
+atributo min a "0".
+atributo max a "5".
+atributo step a "0.5".
+
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <img src="https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt="Davie's Burgers Logo" id="logo">
+      <hr>
+      <form action="./practice.html" method="POST">
+          <h1>Pide tu hamburguesa</h1>
+          <p>Formulario para que puedas pedir tu hamburguesa como deseas</p>
+          <section class="proteina">
+            <label for="carne">¿Qué tipo de proteina te gustaria?</label>
+            <input type="text" name="carne" id="carne" value="mixto">
+          </section>
+          <hr>
+  
+          <section class="cantidad-de-carnes">
+            <label for="cantidad">¿Cuantas porciones quieres?</label>
+            <input type="number" name="cantidad" id="cantidad" step="5">        
+            
+          </section>
+          <hr>
+          <section class="termino">
+            <label for="cocinada">¿Que tan cocinado quieres tu proteina?</label>
+            <br>
+            <div class="rango">
+              <span>Cruda</span>
+              <!--Agrega tu código aquí-->
+              <span>Bien cocida</span>
+            </div>
+          </section>
+      </form>
+      
+    </section>
+  </body>
+</html>

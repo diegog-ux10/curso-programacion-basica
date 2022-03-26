@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <img src="https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt="Davie's Burgers Logo" id="logo">
+      <form id="form" action="">
+          <hr>
+          <h1>Pide tu hamburguesa</h1>
+          <p>Formulario para que puedas pedir tu hamburguesa como deseas</p>
+          <section class="proteina">
+            <label for="carne">¿Qué tipo de proteina te gustaria?</label>
+            <input type="text" name="carne" id="carne" value="mixto">
+          </section>
+          <hr>
+  
+          <section class="cantidad-de-carnes">
+            <label for="cantidad">¿Cuantas porciones quieres?</label>
+            <input type="number" name="cantidad" id="cantidad" step="5">        
+            
+          </section>
+          <hr>
+          <section class="termino">
+            <label for="cocinada">¿Que tan cocinado quieres tu proteina?</label>
+            <br>
+            <div class="rango">
+              <span>Cruda</span>
+              <input id="cocinada" name="cocinada" type="range" min="0" max="5" step="0.5">
+              <span>Bien cocida</span>
+            </div>
+          </section>
+          <section class="complementos">
+            <label>¿Que deseas agregarle a tu Hamburgesa?</label>
+            <div>
+            <br>
+            <label for="lechuga">Lechuga</label>
+                <input type="checkbox" name="complemento" id="lechuga" value="lechuga">
+                <label for="tomate">Tomate</label>
+                <input type="checkbox" name="complemento" id="tomate" value="tomate">
+                <label for="queso">Queso</label>
+                <input type="checkbox" name="complemento" id="queso" value="queso">
+            </div>  
+          </section>
+          <section class="papas">
+            <label>¿Quieres papas fritas con tu hamburguesa?</label>
+            <div>
+            <input type="radio" name="papas" id="si" value="si">
+              <label for="si">Si</label>
+              <input type="radio" name="papas" id="no" value="no">
+              <label for="no">No</label>
+            </div>
+
+          </section>
+          <section class="salsa">
+            <label for="salsa">¿Qué tipo de salsa quieres?</label>
+            <select name="salsa" id="salsa">
+                <option value="BBQ">BBQ</option>
+                <option value="salsa de ajo">Salsa de Ajo</option>
+                <option value="Guasacaca">Guasacaca</option>
+                <option value="Mayonesa">Mayonesa</option>
+            </select>
+            
+
+          </section>
+          <section class="sector">
+            <label for="sector">¿En que zona vives?</label>
+            <input type="text" name="Sector" id="sector" list="sectores">
+            <datalist id="sectores">
+              <option value="Plaza Venezuela">Plaza Venezuela</option>
+              <option value="chacao">chacao</option>
+              <option value="Altamira">Altamira</option>
+              <option value="Palo Verde">Palo Verde</option>
+              <option value="Sabana Grande">Sabana Grande</option>
+              <option value="La Hoyada">La Hoyada</option>
+            </datalist>
+          </section>
+          <section class="informacion-adicional">
+              <label for="extra">Escribanos cualquier tipo de información que desee</label>
+              <textarea name="extra" id="extra" cols="30" rows="4">Escribe algo importante aqui</textarea>
+
+          </section>
+          <section class="enviar">
+              <input type="submit" value="ENVIAR" class="btn">
+          </section>
+      </form>
+
+      <a href="diego@codeando.edu.pe" id="mail">mail</a>
+      
+    </section>
+    <script>
+      const $form = document.querySelector('#form');
+      const $buttonMailTo = document.querySelector('#mail');
+
+      $form.addEventListener('submit', handleSubmit);
+
+      function handleSubmit (event) {
+        event.preventDefault();
+        const form = new FormData(this);
+        $buttonMailTo.setAttribute('href', `mailto:diego@codeando.edu.pe?subject=Pedido Nuevo&body=Proteina: ${form.get('carne')}
+        Cantidad: ${form.get('cantidad')}
+        Termino: ${form.get('cocinada')}
+        Papas: ${form.get('papas')}
+        Complementos: ${form.get('complemento')}
+        Salsa: ${form.get('salsa')}
+        Sector: ${form.get('Sector')}
+        ` )
+        $buttonMailTo.click()
+      }
+    </script>
+  </body>
+</html>

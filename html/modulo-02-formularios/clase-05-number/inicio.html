@@ -1,0 +1,60 @@
+<!--
+Entrada de número
+
+Ahora hemos repasado dos atributos de tipo para <input> relacionados con el texto. Pero, es posible que queramos que nuestros usuarios escriban un número, en cuyo caso podemos establecer el atributo de tipo en... (lo has adivinado)... ¡"número"!
+
+Al configurar type="number" para un <input>, podemos restringir lo que los usuarios escriben en el campo de entrada a solo números (y algunos caracteres especiales como -, + y .). También podemos proporcionar un atributo de paso que crea flechas dentro del campo de entrada para aumentar o disminuir el valor del atributo de paso. A continuación se muestra el código necesario para representar un campo de entrada para números:
+
+<formulario>
+  <label for="years"> Años de experiencia: </label>
+  <input id="años" nombre="años" tipo="número" paso="1">
+</formulario>
+que representa:
+
+-->
+
+<!--
+1. En inicio.html comenzamos un <form> para que los usuarios hagan una hamburguesa personalizada. En este momento tenemos una <label> para cantidad que necesita un elemento <input> asociado.
+
+Como queremos que los usuarios ingresen un número, cree un <input> y establezca los atributos:
+
+Asocie el <input> a la primera <label> asignando el valor correcto a id.
+
+type = "número"
+step = "1"
+name = "cantidad".
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <img src="https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt="Davie's Burgers Logo" id="logo">
+      <hr>
+      <form action="./practice.html" method="POST">
+          <h1>Pide tu hamburguesa</h1>
+          <p>Formulario para que puedas pedir tu hamburguesa como deseas</p>
+          <section class="proteina">
+            <label for="carne">¿Qué tipo de proteina te gustaria?</label>
+            <input type="text" name="carne" id="carne" value="mixto">
+          </section>
+          <hr>
+  
+          <section class="cantidad-de-carnes">
+            <label for="cantidad">¿Cuantas porciones quieres?</label>
+            <!--Agrega tu codigo aqui-->
+            <input type="number" name="cantidad" id="cantidad" step="5"> 
+
+            
+            
+          </section>
+      </form>
+      
+    </section>
+  </body>
+</html>

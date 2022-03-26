@@ -1,0 +1,119 @@
+<!--
+Entrada de lista de datos
+
+Incluso si tenemos una lista desplegable organizada, si la lista tiene muchas opciones, podría ser tedioso para los usuarios desplazarse por toda la lista para encontrar una opción. Ahí es donde resulta útil usar el elemento <datalist>.
+
+La <datalist> se usa con un elemento <input type="text">. el <input> crea un campo de texto en el que los usuarios pueden escribir y filtrar las opciones de la <datalist>. Repasemos un ejemplo concreto:
+
+<form>
+  <label for="city">¿Ciudad ideal para visitar?</label>
+  <input type="texto" list="ciudades" id="ciudad" nombre="ciudad">
+ 
+  <datalist id="ciudades">
+    <option value="Nueva York"></option>
+    <option value="Tokio"></option>
+    <option value="Barcelona"></option>
+    <option value="Ciudad de México"></option>
+    <option value="Melbourne"></option>
+    <option value="Otro"></option>
+  </datalist>
+</form>
+
+
+Observe, en el código anterior, tenemos un <input> que tiene un atributo de lista. El <input> está asociada a la <datalist> a través del atributo de list del <input> y el id de la <datalist>.
+
+Si bien <select> y <datalist> comparten algunas similitudes, existen algunas diferencias importantes. En el elemento <input> asociado, los usuarios pueden escribir en el campo de entrada para buscar una opción en particular. Si ninguna de las opciones coincide, el usuario aún puede usar lo que escribió. Cuando se envía el formulario, el valor del name del <input> y el valor de la opción seleccionada, o lo que el usuario escribió , se envía en pareja.
+
+¡Ahora es el momento de crear una lista de datos propia!-->
+
+<!--
+1. Ahora pidamos a los usuarios elegir el sector donde viven para el delivery. Usemos el elemento <datalist>.
+
+En el elemento <section> con una clase de "sector", ya tenemos configurados <label> y <input>. Agregue un elemento <datalist> con una identificación de "sectores".
+
+2.Dentro del elemento <datalist>, agregue 3 <option>s.
+
+La primera opción debe tener un value de "plaza venezuela".
+La segunda opción debe tener un value de "chacao".
+La tercera opción puede ser un value que tu elijas y mostrar texto relevante para el value (¡asegúrese de que no esté vacío!)
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <img src="https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt="Davie's Burgers Logo" id="logo">
+      <form action="./practice.html" method="POST">
+          <hr>
+          <h1>Pide tu hamburguesa</h1>
+          <p>Formulario para que puedas pedir tu hamburguesa como deseas</p>
+          <section class="proteina">
+            <label for="carne">¿Qué tipo de proteina te gustaria?</label>
+            <input type="text" name="carne" id="carne" value="mixto">
+          </section>
+          <hr>
+  
+          <section class="cantidad-de-carnes">
+            <label for="cantidad">¿Cuantas porciones quieres?</label>
+            <input type="number" name="cantidad" id="cantidad" step="5">        
+            
+          </section>
+          <hr>
+          <section class="termino">
+            <label for="cocinada">¿Que tan cocinado quieres tu proteina?</label>
+            <br>
+            <div class="rango">
+              <span>Cruda</span>
+              <input id="cocinada" name="cocinada" type="range" min="0" max="5" step="0.5">
+              <span>Bien cocida</span>
+            </div>
+          </section>
+          <section class="complementos">
+            <label>¿Que deseas agregarle a tu Hamburgesa?</label>
+            <div>
+            <br>
+            <label for="lechuga">Lechuga</label>
+                <input type="checkbox" name="complemento" id="lechuga" value="lechuga">
+                <label for="tomate">Tomate</label>
+                <input type="checkbox" name="complemento" id="tomate" value="tomate">
+                <label for="queso">Queso</label>
+                <input type="checkbox" name="complemento" id="queso" value="queso">
+            </div>  
+          </section>
+          <section class="papas">
+            <label>¿Quieres papas fritas con tu hamburguesa?</label>
+            <div>
+            <input type="radio" name="papas" id="si" value="si">
+              <label for="si">Si</label>
+              <input type="radio" name="papas" id="no" value="no">
+              <label for="no">No</label>
+            </div>
+
+          </section>
+          <section class="salsa">
+            <label for="salsa">¿Qué tipo de salsa quieres?</label>
+            <select name="salsa" id="salsa">
+                <option value="BBQ">BBQ</option>
+                <option value="salsa de ajo">Salsa de Ajo</option>
+                <option value="Guasacaca">Guasacaca</option>
+                <option value="Mayonesa">Mayonesa</option>
+            </select>
+            <section class="sector">
+              <label for="sector">¿En que zona vives?</label>
+              <input type="text" name="Sector" id="sector" list="sectores">
+            </section>
+
+          </section>
+      </form>
+      
+    </section>
+  </body>
+</html>
