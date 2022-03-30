@@ -1,0 +1,106 @@
+<!--
+Entrada de botón de opción
+
+Las casillas de verificación funcionan bien si queremos presentar a los usuarios múltiples opciones y permitirles elegir una o más de las opciones. Sin embargo, hay casos en los que queremos presentar múltiples opciones y solo permitir una selección, como preguntar a los usuarios si están de acuerdo o en desacuerdo con los términos y condiciones. Veamos el código utilizado para crear botones de opción:
+
+<form>
+  <p>¿Qué es la suma de 1 + 1?</p>
+  <input type="radio" id="dos" name="respuesta" value="2">
+  <label for="dos">2</label>
+  <br>
+  <input type="radio" id="once" name="respuesta" value="11">
+  <label for="once">11</label>
+</form>
+
+El fragmento de código de radio (como las casillas de verificación) no muestran su valor. Tenemos una <label> asociada para representar el valor del botón de opción. Para agrupar botones de opción, les asignamos el mismo nombre y solo se puede seleccionar un botón de opción de ese grupo.
+
+Veamos esto en acción creando nuestros propios botones de opción.
+-->
+
+<!--
+
+EJERCICIOS:
+
+1. Podemos dar a nuestros usuarios la opción de agregar papas a su pedido. Usemos botones de radio para eso.
+
+En el elemento <section> con una clase de "papas" hay dos <label> que no tienen elementos <input> asociados. Agregue un elemento <input> asociado con la primera <label>.
+
+el <input> creado debe tener:
+
+un id de "sí".
+un type establecido en "radio"
+un atributo de name con un valor de "papas".
+un value de "sí".
+
+2. Genial, ahora agregue otro elemento <input> para dar a los usuarios otra opción. El input creado debe tener:
+
+un id de "no".
+un type establecido en "radio"
+un atributo de name con un valor de "papas".
+un value de "no".
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <img src="https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt="Davie's Burgers Logo" id="logo">
+      <form action="./practice.html" method="POST">
+          <hr>
+          <h1>Pide tu hamburguesa</h1>
+          <p>Formulario para que puedas pedir tu hamburguesa como deseas</p>
+          <section class="proteina">
+            <label for="carne">¿Qué tipo de proteina te gustaria?</label>
+            <input type="text" name="carne" id="carne" value="mixto">
+          </section>
+          <hr>
+  
+          <section class="cantidad-de-carnes">
+            <label for="cantidad">¿Cuantas porciones quieres?</label>
+            <input type="number" name="cantidad" id="cantidad" step="5">        
+            
+          </section>
+          <hr>
+          <section class="termino">
+            <label for="cocinada">¿Que tan cocinado quieres tu proteina?</label>
+            <br>
+            <div class="rango">
+              <span>Cruda</span>
+              <input id="cocinada" name="cocinada" type="range" min="0" max="5" step="0.5">
+              <span>Bien cocida</span>
+            </div>
+          </section>
+          <section class="complementos">
+            <label>¿Que deseas agregarle a tu Hamburgesa?</label>
+            <div>
+            <br>
+            <label for="lechuga">Lechuga</label>
+                <input type="checkbox" name="complemento" id="lechuga" value="lechuga">
+                <label for="tomate">Tomate</label>
+                <input type="checkbox" name="complemento" id="tomate" value="tomate">
+                <label for="queso">Queso</label>
+                <input type="checkbox" name="complemento" id="queso" value="queso">
+            </div>  
+          </section>
+          <section class="papas">
+            <label>¿Quieres papas fritas con tu hamburguesa?</label>
+            <div>
+              <label for="si">Si</label>
+              <input type="radio" name="papas" id="si" >
+              <label for="">No</label>
+            </div>
+
+          </section>
+      </form>
+      
+    </section>
+  </body>
+</html>

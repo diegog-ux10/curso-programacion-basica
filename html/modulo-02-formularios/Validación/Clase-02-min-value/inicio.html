@@ -1,0 +1,50 @@
+<!--
+Establecer un mínimo y un máximo
+
+Otra validación integrada que podemos usar es asignar un valor mínimo o máximo para un campo numérico. Para establecer un valor mínimo aceptable, usamos el atributo min y asignamos un valor. Por otro lado, para establecer un valor máximo aceptable, asignamos un valor al atributo máximo. Veamos esto en código:
+
+<form action="/example.html" method="POST">
+  <label for="guests">Enter # of guests:</label>
+  <input id="guests" name="guests" type="number" min="1" max="4">
+  <input type="submit" value="Submit">
+</form>
+
+
+Si un usuario intenta enviar una entrada menor que 1, aparecerá una advertencia: solicitará en un campo numérico que el usuario ingrese un valor mayor o igual a 1
+
+
+-->
+
+
+<!--
+
+Es hora de hacer cumplir las reglas del juego de adivinanzas.
+
+En la etiqueta de apertura <input>, establezca:
+
+El atributo min a "1"
+El atributo máximo a "10"
+
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Number Guessing</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
+  </head>
+  <body>
+    <section class="overlay">
+      <h1>Adivina el numero!</h1>
+      <form action="" method="GET">
+        <!--Add a required attribute to the input element-->
+        <label for="guess">Elije un numero de 1-10</label>
+        <br>
+        <input type="number" name="guess" id="guess" required>
+        <br>
+        <input type="submit" id="submission" value="Submit">
+      </form>
+    </section>
+  </body>
+</html>

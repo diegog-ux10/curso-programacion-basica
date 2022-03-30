@@ -1,0 +1,57 @@
+<!--
+Comprobación de la longitud del texto
+
+En el ejercicio anterior, pudimos usar min y max para establecer valores mínimos y máximos aceptables en un campo numérico. Pero, ¿qué pasa con los campos de texto? Ciertamente, hay casos en los que no querríamos que nuestros usuarios escriban más de una cierta cantidad de caracteres (piense en el límite de caracteres para los mensajes en Twitter). Incluso podríamos querer establecer un número mínimo de caracteres. Convenientemente, hay validaciones HTML5 integradas para estas situaciones.
+
+Para establecer una cantidad mínima de caracteres para un campo de texto, agregamos el atributo minlength y un valor para establecer un valor mínimo. De manera similar, para establecer la cantidad máxima de caracteres para un campo de texto, usamos el atributo maxlength y establecemos un valor máximo. Echemos un vistazo a estos atributos en el código:
+
+<form action="/example.html" method="POST">
+  <label for="summary">Summarize your feelings in less than 250 characters</label>
+  <input id="summary" name="summary" type="text" minlength="5" maxlength="250" required>
+  <input type="submit" value="Submit">
+</form>
+
+-->
+
+<!--
+  1. Para el <form> de inicio de sesión, queremos que nuestros usuarios tengan nombres de usuario que tengan al menos 3 caracteres y un máximo de 15. Agreguemos esta validación a nuestro <form> actual.
+
+Al <input> con una identificación de "nombre-usuario", agregue los siguientes atributos y valores:
+
+una minlength de "3"
+una maxlength de "15"
+
+2. También queremos que las contraseñas tengan un mínimo de 8 caracteres y un máximo de 15.
+
+Entonces, en la etiqueta de apertura <input> que tiene una identificación de "contraseña", agregue:
+
+una minlength de "8"
+una longitud máxima de "15"
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  </head>
+  <body>
+    <section class="overlay">
+      <h1>Registrate</h1>
+      <p>Crea una cuenta:</p>
+      <form action="submission.html" method="GET">
+        <label for="nombre-usuario">Usuario:</label>
+        <br>
+        <input id="nombre-usuario" name="nombre-usuario" type="text">
+        <br>
+        <label for="contraseña">Contraseña:</label>
+        <br>
+        <input id="contraseña" name="contraseña">
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </body>
+</html>

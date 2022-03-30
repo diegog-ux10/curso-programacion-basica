@@ -1,0 +1,67 @@
+<!--
+Cómo funciona un formulario
+
+Podemos pensar en Internet como una red de computadoras que envían y reciben información. Las computadoras necesitan una solicitud HTTP para saber cómo comunicarse. La solicitud HTTP le indica a la computadora receptora cómo manejar la información entrante.
+
+El elemento <form> es una gran herramienta para recopilar información, pero luego necesitamos enviar esa información a otro lugar para su procesamiento. Necesitamos proporcionar el elemento <form> tanto con la ubicación donde va la información del <form> como con la solicitud HTTP a realizar. Eche un vistazo al <formulario> de muestra a continuación:
+
+
+<form action="/ejemplo.html" method="POST">
+</formulario>
+
+
+En el ejemplo anterior, hemos creado el esqueleto de un <form> que enviará información a ejemplo.html como una solicitud POST:
+
+El atributo de acción determina dónde se envía la información.
+Al atributo de método se le asigna un verbo HTTP que se incluye en la solicitud HTTP.
+Nota: los verbos HTTP como POST no necesitan mayúsculas para que la solicitud funcione, pero se hace por convención. En el ejemplo anterior, podríamos haber escrito method="post" y seguiría funcionando.
+
+El elemento <form> también puede contener elementos secundarios. Por ejemplo, sería útil proporcionar un encabezado para que los usuarios sepan de qué se trata este <form>. También podríamos agregar un párrafo para brindar aún más detalles. Veamos un ejemplo de esto en código:
+
+<forma action="/ejemplo.html" method="POST">
+  <h1>Crear un formulario</h1>
+  <p>Parece que desea aprender a crear un formulario HTML. Bueno, la mejor manera de aprender es jugar con él.</p>
+</formulario>
+
+
+El ejemplo anterior no recopila ninguna entrada del usuario, pero lo haremos en el próximo ejercicio. Por ahora, ¡practiquemos la creación de la base de un <formulario> HTML!
+
+-->
+
+<!--
+    EJERCICIOS:
+1. En el elemento <section>, agregue un elemento <form> debajo del comentario proporcionado. Asigne el <form> con:
+
+a. Un atributo de action con un valor de "/practice.html"
+
+b. Un atributo de método con un valor de "POST"
+
+2. En este momento tenemos un <form> en blanco en un sitio de hamburguesas, agreguemos algo de contexto.
+
+Agregue un <h1> dentro del elemento <form> con texto relacionado con el sitio entre las etiquetas de apertura y cierre <h1>.
+
+
+3. Agregue algunos detalles al formulario insertando un elemento <p> debajo del elemento <h1>. Escribe una descripción relevante dentro del elemento <p>.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <img src="https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt="Davie's Burgers Logo" id="logo">
+      <hr>
+      <!--Agrega tu Codigo Aquí abajo-->
+      <form action="/practice.html" method="POST">
+
+      </form>
+      
+    </section>
+  </body>
+</html>

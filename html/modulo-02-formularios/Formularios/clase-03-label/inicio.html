@@ -1,0 +1,47 @@
+<!--
+Agregar una etiqueta
+
+En el ejercicio anterior creamos un elemento <input> pero no incluimos nada para explicar para qué se usa <input>. Para que un usuario identifique correctamente un <input>, usamos el elemento <label> con el nombre apropiado.
+
+El elemento <label> tiene una etiqueta de apertura y cierre y muestra el texto escrito entre las etiquetas de apertura y cierre. Para asociar una <label> y una <input>, el <input> necesita un atributo id. Luego asignamos el atributo for del elemento <label> con el valor del atributo id de <input>, así:
+
+<forma action="/ejemplo.html" method="POST">
+  <label for="comida">¿Qué quieres comer?</label>
+  <br>
+  <input type="text" name="comida" id="comida">
+</formulario>
+
+¡Veamos el elemento <label> en acción!
+-->
+
+<!--
+  EJERCICIOS:
+
+1. Agregue un elemento <label> que esté asociado con el elemento <input> incluido en inicio.html (¡usa el atributo for!)
+
+Luego agregue "Nombre de usuario" dentro del elemento <label>.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <img src="https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt="Davie's Burgers Logo" id="logo">
+      <hr>
+      <form action="./practice.html" method="POST">
+          <h1>Pide tu hamburguesa</h1>
+          <p>Formulario para que puedas pedir tu hamburguesa como deseas</p>
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre-de-usuario" value="David" id="nombre">
+      </form>
+      
+    </section>
+  </body>
+</html>
