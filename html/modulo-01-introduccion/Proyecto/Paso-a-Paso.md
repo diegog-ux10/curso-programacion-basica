@@ -1,10 +1,10 @@
-# Blog de Moda
+ Blog de Moda
 
 Tu amiga Isa es una bloguera de moda, te ha pedido que crees un nuevo sitio web para ella, ¡justo a tiempo para la Semana de la Moda de Nueva York!
 
 Utilice su nuevo conocimiento de HTML para crear la estructura subyacente del blog. Asegúrese de incluir muchas imágenes, enlaces, listas y otros elementos HTML que haya aprendido para que sus fans tengan mucho que leer.
 
-## Paso a Paso
+ Paso a Paso
 
 1. Para comenzar, agregue la declaración !DOCTYPE html> como la primera línea de código en la parte superior del archivo index.html. Agregue el elemento html> a continuación.
 
@@ -16,15 +16,15 @@ Utilice su nuevo conocimiento de HTML para crear la estructura subyacente del bl
 
 4. Directamente debajo de la etiqueta de apertura body, agregue un h1 que diga:
 
-# "Una guía de información privilegiada para NYFW"
+ "Una guía de información privilegiada para NYFW"
 
 Debajo de eso, agregue un h2> que diga:
 
-## “Conseguir entradas y elegir los espectáculos”
+ “Conseguir entradas y elegir los espectáculos”
 
 Debajo de eso, agregue un h2> que diga:
 
-## “Vestirse para los Espectáculos”
+ “Vestirse para los Espectáculos”
 
 5. ¡Aquí está el primer mensaje de Isa de la Semana de la Moda! Agreguemos una entrada de blog. Entre la etiqueta h1 y la primera h2, agregue una etiqueta p que diga:
 
@@ -71,6 +71,6 @@ correo electrónico: isa@fashionblog.com | teléfono: 917-555-1098 | dirección:
 
 15. Dentro del contacto div, coloque etiquetas de apertura y cierre strong alrededor de "correo electrónico", "teléfono" y "dirección".
 
-16. Hagamos que la imagen de perfil sea un enlace a la sección de contacto de la página web. Busque la etiqueta de perfil img y rodéela abriendo y cerrando etiquetas a. En la etiqueta a, establezca href="#contacto".
+16. Hagamos que la imagen de perfil sea un enlace a la sección de contacto de la página web. Busque la etiqueta de perfil img y rodéela abriendo y cerrando etiquetas a. En la etiqueta a, establezca href="contacto".
 
 17. ¡Felicitaciones! Tienes los comienzos de un sólido blog de moda. Siéntase libre de hacer modificaciones y practicar su HTML agregando más contenido.
