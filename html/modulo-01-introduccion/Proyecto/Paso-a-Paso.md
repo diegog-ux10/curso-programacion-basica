@@ -6,23 +6,23 @@ Utilice su nuevo conocimiento de HTML para crear la estructura subyacente del bl
 
  Paso a Paso
 
-1. Para comenzar, agregue la declaración !DOCTYPE html> como la primera línea de código en la parte superior del archivo index.html. Agregue el elemento html> a continuación.
+1. Para comenzar, agregue la declaración !DOCTYPE html como la primera línea de código en la parte superior del archivo index.html. Agregue el elemento html a continuación.
 
 
-2. Debajo de la etiqueta de apertura html>, agregue un elemento head>. Debajo del elemento head>, agregue el elemento body>.
+2. Debajo de la etiqueta de apertura html, agregue un elemento head. Debajo del elemento head, agregue el elemento body.
 
 
-3. Dentro de las etiquetas head>, agregue un elemento title>. Título del sitio web "Isa Moda".
+3. Dentro de las etiquetas head, agregue un elemento title. Título del sitio web "Isa Moda".
 
 4. Directamente debajo de la etiqueta de apertura body, agregue un h1 que diga:
 
  "Una guía de información privilegiada para NYFW"
 
-Debajo de eso, agregue un h2> que diga:
+Debajo de eso, agregue un h2 que diga:
 
  “Conseguir entradas y elegir los espectáculos”
 
-Debajo de eso, agregue un h2> que diga:
+Debajo de eso, agregue un h2 que diga:
 
  “Vestirse para los Espectáculos”
 
