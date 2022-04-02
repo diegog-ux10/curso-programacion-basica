@@ -1,0 +1,68 @@
+<!--
+Vinculación a la página relativa
+
+Hasta ahora ha aprendido cómo vincular a páginas web externas. Muchos sitios también tienen enlaces a páginas web internas como Inicio, Acerca de y Contacto.
+
+Antes de aprender a enlazar entre páginas internas, establezcamos dónde se almacenan nuestros archivos. Al crear sitios web estáticos de varias páginas, los desarrolladores web suelen almacenar archivos HTML en el directorio raíz o en una carpeta principal donde se almacenan todos los archivos del proyecto. A medida que crece el tamaño de los proyectos que crea, puede usar carpetas adicionales dentro de la carpeta principal del proyecto para organizar su código.
+
+carpeta de proyecto/
+|—— about.html
+|—— contact.html
+|—— index.html
+
+El ejemplo anterior muestra tres archivos diferentes: about.html, contact.html e index.html en una carpeta.
+
+Los archivos HTML a menudo se almacenan en la misma carpeta, como se muestra en el ejemplo anterior. Si el navegador actualmente muestra index.html, también sabe que about.html y contact.html están en la misma carpeta. Debido a que los archivos se almacenan en la misma carpeta, podemos vincular páginas web mediante una ruta relativa.
+
+<a href="./contacto.html">Contacto</a>
+En este ejemplo, la etiqueta <a> se usa con una ruta relativa para vincular desde el archivo HTML actual al archivo contact.html en la misma carpeta. En la página web, Contacto aparecerá como un enlace.
+
+Una ruta relativa es un nombre de archivo que muestra la ruta a un archivo local (un archivo en el mismo sitio web, como ./index.html) versus una ruta absoluta (una URL completa, como https://www.pagina.com/learn/learn-html que se almacena en una carpeta diferente). El ./ en ./index.html le dice al navegador que busque el archivo en la carpeta actual.
+-->
+
+<!--
+1. Directamente debajo de la etiqueta de apertura <body> dentro de inicio.html, agregue una etiqueta <a> que se vincule a otra-pagina.html con una ruta relativa. El enlace debe decir Ir Otra Página.
+
+2. Dirigete al archivo otra-pagina.html que esta dentro de esta carpeta. y agrega un enlace relativo que regrese a inicio.html. El enlace debe decir Regresar al inicio.
+-->
+<!DOCTYPE html>
+<head>
+    <title>Osos Pardos</title>
+</head>
+<html>
+    <body>
+        <!--Agrega tu código aquí-->
+        <h1>El oso pardo</h1>
+        <div id="introduccion">
+          <h2>Acerca de los osos pardos</h2>
+          <p>El oso pardo (<em>Ursus arctos</em>) es originario de partes del norte de Eurasia y América del Norte. Actualmente su estado de conservación es de <strong>Preocupación Menor</strong>.<br><br> Hay muchas subespecies dentro de la especie de oso pardo, incluido el oso Atlas y el oso pardo del Himalaya.</p>
+          <h3>Especies</h3>
+          <a href="https://es.wikipedia.org/wiki/Ursus_arctos
+          " target="_blank">Más información</a>
+          <ul>
+            <li>Arctos</li>
+            <li>Collarus</li>
+            <li>Horribilis</li>
+            <li>Nelsoni (extinto)</li>
+          </ul>
+          <h3>Características</h3>
+          <p>Los osos pardos no siempre son completamente marrones. Algunos pueden ser rojizos o amarillentos. Tienen garras curvas muy grandes y patas enormes. Los osos pardos machos suelen ser un 30 % más grandes que las hembras. Pueden variar de 5 pies a 9 pies, de altura.</p>
+        </div>
+        <div id="habitat">
+          <h2>Hábitat</h2>
+          <h3>Países con grandes poblaciones de osos pardos</h3>
+          <ol>
+            <li>Rusia</li>
+            <li>Estados Unidos</li>
+            <li>Canadá</li>
+          </ol>
+          <h3>Países con pequeñas poblaciones de osos pardos</h3>
+          <p>Algunos países con poblaciones de osos pardos más pequeños incluyen Armenia, Bielorrusia, Bulgaria, China, Finlandia, Francia, Grecia, India, Japón, Nepal, Polonia, Rumania, Eslovenia, Turkmenistán y Uzbekistán</p>
+        </div>
+        <div id="medios">
+          <h2>Medios</h2>
+          <img src="./assets/img/oso.jpg" alt="un oso pardo">
+          <video src="./assets/video.mp4" width="320" height="240" controls>Este no se cargó</video>
+        </div>
+      </body>
+</html>

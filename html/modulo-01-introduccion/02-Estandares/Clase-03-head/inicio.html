@@ -1,0 +1,58 @@
+<!--
+La cabeza
+
+Hasta ahora, ha hecho dos cosas para configurar el archivo correctamente:
+
+Declaró al navegador que su código es HTML con <!DOCTYPE html>
+Se agregó el elemento HTML (<html>) que contendrá el resto de su código.
+Hemos agregado estos elementos a la página de osos pardos que creó anteriormente. Ahora, démosle también al navegador información sobre la página en sí. Podemos hacer esto agregando un elemento <head>.
+
+¿Recuerdas la etiqueta <body>? El elemento <head> es parte de esta metáfora HTML. Va por encima de nuestro elemento <body>.
+
+El elemento <head> contiene los metadatos de una página web. Los metadatos son información sobre la página que no se muestra directamente en la página web. A diferencia de la información dentro de la etiqueta <body>, los metadatos en el encabezado son información sobre la página en sí. Verá un ejemplo de esto en el siguiente ejercicio.
+
+Las etiquetas de encabezado de apertura y cierre suelen aparecer como el primer elemento después de su primera etiqueta HTML:
+
+<head>
+</head>
+-->
+
+<!--
+1. Coloque el elemento <head> debajo de la etiqueta de apertura <html>.
+-->
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>El oso pardo</h1>
+        <div id="introduccion">
+          <h2>Acerca de los osos pardos</h2>
+          <p>El oso pardo (<em>Ursus arctos</em>) es originario de partes del norte de Eurasia y América del Norte. Actualmente su estado de conservación es de <strong>Preocupación Menor</strong>.<br><br> Hay muchas subespecies dentro de la especie de oso pardo, incluido el oso Atlas y el oso pardo del Himalaya.</p>
+          <h3>Especies</h3>
+          <ul>
+            <li>Arctos</li>
+            <li>Collarus</li>
+            <li>Horribilis</li>
+            <li>Nelsoni (extinto)</li>
+          </ul>
+          <h3>Características</h3>
+          <p>Los osos pardos no siempre son completamente marrones. Algunos pueden ser rojizos o amarillentos. Tienen garras curvas muy grandes y patas enormes. Los osos pardos machos suelen ser un 30 % más grandes que las hembras. Pueden variar de 5 pies a 9 pies, de altura.</p>
+        </div>
+        <div id="habitat">
+          <h2>Hábitat</h2>
+          <h3>Países con grandes poblaciones de osos pardos</h3>
+          <ol>
+            <li>Rusia</li>
+            <li>Estados Unidos</li>
+            <li>Canadá</li>
+          </ol>
+          <h3>Países con pequeñas poblaciones de osos pardos</h3>
+          <p>Algunos países con poblaciones de osos pardos más pequeños incluyen Armenia, Bielorrusia, Bulgaria, China, Finlandia, Francia, Grecia, India, Japón, Nepal, Polonia, Rumania, Eslovenia, Turkmenistán y Uzbekistán</p>
+        </div>
+        <div id="medios">
+          <h2>Medios</h2>
+          <img src="./assets/img/oso.jpg" alt="un oso pardo">
+          <video src="./assets/video.mp4" width="320" height="240" controls>Este no se cargó</video>
+        </div>
+      </body>
+</html>
