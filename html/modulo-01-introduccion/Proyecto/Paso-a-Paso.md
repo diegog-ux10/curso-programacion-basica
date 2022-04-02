@@ -1,10 +1,10 @@
- Blog de Moda
+# Blog de Moda
 
 Tu amiga Isa es una bloguera de moda, te ha pedido que crees un nuevo sitio web para ella, ¡justo a tiempo para la Semana de la Moda de Nueva York!
 
 Utilice su nuevo conocimiento de HTML para crear la estructura subyacente del blog. Asegúrese de incluir muchas imágenes, enlaces, listas y otros elementos HTML que haya aprendido para que sus fans tengan mucho que leer.
 
- Paso a Paso
+## Paso a Paso
 
 1. Para comenzar, agregue la declaración !DOCTYPE html como la primera línea de código en la parte superior del archivo index.html. Agregue el elemento html a continuación.
 
