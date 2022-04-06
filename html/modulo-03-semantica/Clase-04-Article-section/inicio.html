@@ -1,0 +1,64 @@
+<!--
+Artículo y Sección
+
+Ahora que cubrimos el cuerpo del HTML semántico, centrémonos en lo que puede ir en el cuerpo. Los dos elementos en los que nos vamos a centrar ahora son <section> y <article>.
+
+<section> define elementos en un documento, como capítulos, encabezados o cualquier otra área del documento con el mismo tema. Por ejemplo, el contenido con el mismo tema, como artículos sobre críquet, puede incluirse en una sola <section>. La página de inicio de un sitio web se puede dividir en secciones para la introducción, las noticias y la información de contacto.
+
+Aquí hay un ejemplo de cómo usar <section>:
+
+<section>
+  <h2>Fun Facts About Cricket</h2> 
+</section>
+
+En el código anterior creamos un elemento <section> para encapsular el código. En <section> agregamos un elemento <h2> como encabezado.
+
+El elemento <article> contiene contenido que tiene sentido por sí mismo. <article> puede contener contenido como artículos, blogs, comentarios, revistas, etc. Una etiqueta <article> ayudaría a alguien que usa un lector de pantalla a comprender dónde comienza y termina el contenido del artículo (que puede contener una combinación de texto, imágenes, audio, etc.).
+
+Aquí hay un ejemplo de cómo usar <article>:
+
+<section>
+  <h2>Fun Facts About Cricket</h2>
+  <article>
+    <p>A single match of cricket can last up to 5 days.</p>
+  </article>
+</section>
+
+En el código anterior, el elemento <article> que contiene un hecho sobre el cricket se colocó dentro del elemento <section>. Es importante tener en cuenta que un elemento <section> también podría colocarse en un elemento <article> según el contexto.
+-->
+
+<!--
+1. En el código, busque y reemplace <div id = "section"> con <section> y reemplace el cierre correspondiente </div> con un cierre </section>.
+
+Nota: ¡Al eliminar la etiqueta <div>, asegúrese de eliminar la identificación adjunta!
+
+2. Ahora encapsule la etiqueta <h2> y <p> con <article>.
+-->
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h1>Navigational Links</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#posts">Posts</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <div id="section">
+        <h2>Facts About Dogs</h2>
+        <p>
+        Dogs have a sense of time. It's been proven that they know the difference between a hour and five. If conditioned to, they can predict future events, such as regular walk times.
+        </p>
+      </div>   
+    </main>    
+    <footer>
+      <p>Contact me at +1 234 567 8910 </p>
+    </footer>              
+  </body>
+</html>

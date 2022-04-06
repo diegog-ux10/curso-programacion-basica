@@ -1,0 +1,16 @@
+Introducción al HTML semántico
+Cuando creamos páginas web, usamos una combinación de HTML no semántico y HTML semántico. La palabra semántica significa "relacionado con el significado", por lo que los elementos semánticos brindan información sobre el contenido entre las etiquetas de apertura y cierre.
+
+Al usar HTML semántico, seleccionamos elementos HTML en función de su significado, no de cómo se presentan. Elementos como <div> y <span> no son elementos semánticos ya que no brindan contexto sobre lo que hay dentro de esas etiquetas.
+
+Por ejemplo, en lugar de usar un elemento <div> para contener nuestra información de encabezado, podríamos usar un elemento <header>, que se usa como una sección de encabezado. Al usar una etiqueta <header> en lugar de un <div>, brindamos contexto sobre qué información hay dentro de la etiqueta de apertura y cierre.
+
+¿Por qué usar HTML semántico?
+
+Accesibilidad: el HTML semántico hace que las páginas web sean accesibles para dispositivos móviles y también para personas con discapacidades. Esto se debe a que los lectores de pantalla y los navegadores pueden interpretar mejor el código.
+
+SEO: Mejora el SEO del sitio web, o Search Engine Optimization, que es el proceso de aumentar la cantidad de personas que visitan su página web. Con un mejor SEO, los motores de búsqueda pueden identificar mejor el contenido de su sitio web y evaluar adecuadamente el contenido más importante.
+
+Fácil de entender: el HTML semántico también hace que el código fuente del sitio web sea más fácil de leer para otros desarrolladores web.
+
+Para comprender mejor esto, puede pensar en comparar HTML no semántico con entrar a una tienda sin letreros en los pasillos. Como los pasillos no están etiquetados, no sabe qué productos hay en esos pasillos. Sin embargo, las tiendas que tienen letreros para cada pasillo hacen que sea mucho más fácil encontrar los artículos que necesita, al igual que el HTML semántico.

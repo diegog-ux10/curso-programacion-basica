@@ -1,0 +1,69 @@
+<!--
+Encabezado y navegación
+
+Echemos un vistazo a algunos elementos semánticos que ayudan en la estructura de una página web. Un <header> es un contenedor generalmente para enlaces de navegación o contenido introductorio que contiene encabezados <h1> a <h6>.
+
+El siguiente ejemplo muestra <header> en acción:
+
+<header>
+  <h1>
+     Everything you need to know about pizza!
+  </h1>
+</header>
+
+Esto se puede comparar con el siguiente código que usa una etiqueta <div> en lugar de una etiqueta <header>:
+
+<div id="header">
+  <h1>
+    Everything you need to know about pizza!
+  </h1>
+</div>
+
+Al usar una etiqueta <header>, nuestro código se vuelve más fácil de leer. Es mucho más fácil identificar lo que hay dentro de las etiquetas principales de <h1>, a diferencia de una etiqueta <div> que no proporcionaría detalles sobre lo que había dentro de la etiqueta.
+
+Un <nav> se usa para definir un bloque de enlaces de navegación, como menús y tablas de contenido. Es importante tener en cuenta que <nav> se puede usar dentro del elemento <header> pero también se puede usar solo.
+
+Echemos un vistazo al siguiente ejemplo:
+
+<header> 
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>      
+    </ul>
+  </nav>
+</header>
+
+Al usar <nav> como una forma de etiquetar nuestros enlaces de navegación, será más fácil no solo para nosotros, sino también para los navegadores web y los lectores de pantalla leer el código.
+
+Ahora que hemos aprendido acerca de los elementos <header> y <nav>, ¡agreguémoslos a nuestro código!
+
+-->
+
+<!--
+
+EJERCICIOS:
+
+1. En el editor de código, busque la etiqueta <div id="header"> y cámbiela a <header>.
+
+Nota: Al cambiar una etiqueta de apertura, debe encontrar la etiqueta de cierre correspondiente y cambiarla también. Si no lo hace, verá algo rojo en su código para indicar el error.
+
+2. Ahora, busque la etiqueta <div id="nav"> y cámbiela a <nav>.
+
+-->
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="header">
+      <h1>Navigational Links</h1>
+      <div id="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#posts">Posts</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

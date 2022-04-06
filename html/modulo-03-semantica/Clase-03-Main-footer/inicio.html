@@ -1,0 +1,72 @@
+<!--
+
+Principal y pie de página.
+
+Dos elementos estructurales más son <main> y <footer>. Estos elementos, junto con <nav> y <header>, ayudan a describir dónde se encuentra un elemento según los estándares de desarrollo web convencionales.
+
+El elemento <main> se usa para encapsular el contenido dominante dentro de una página web. Esta etiqueta está separada del <footer> y el <nav> de una página web ya que estos elementos no contienen el contenido principal. Al usar <main> en lugar de un elemento <div>, los lectores de pantalla y los navegadores web pueden identificar mejor que lo que está dentro de la etiqueta es la mayor parte del contenido.
+
+Entonces, ¿cómo se ve <main> cuando se incorpora a nuestro código? Esa es una gran pregunta.
+
+<main>
+  <header>
+    <h1>Types of Sports</h1>
+  </header>
+  <article>
+    <h3>Baseball</h3>
+    <p>
+      The first game of baseball was played in Cooperstown, New York in the summer of 1839.
+    </p>
+  </article>
+</main>
+
+Como vemos arriba, <main> contiene una etiqueta <article> y <header> con elementos secundarios que contienen la información más importante relacionada con la página.
+
+El contenido en la parte inferior de la información del asunto se conoce como pie de página, indicado por el elemento <footer>. El pie de página contiene información como:
+
+Información del contacto
+Informacion registrada
+Condiciones de uso
+Mapa del sitio
+Referencia a los enlaces de la parte superior de la página
+Por ejemplo:
+
+<footer>
+  <p>Email me at diego@ejemplo.com</p>
+</footer>
+
+En el ejemplo anterior, el pie de página se usa para contener información de contacto. La etiqueta <footer> está separada del elemento <main> y normalmente se encuentra en la parte inferior del contenido.
+
+-->
+
+<!--
+EJERCICIO:
+
+1. En el editor de código, busque la etiqueta <div id="main"> y cámbiela a <main>.
+
+2. Ahora, busca la etiqueta <div id = "footer"> y cámbiala a <footer>.
+    
+-->
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h1>Navigational Links</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#posts">Posts</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="main">
+      <p>¡Aquí es donde irá el contenido principal una vez que la página esté construida!</p>
+    </div>    
+    <div id="footer">
+      <p>Contact me at +1 234 567 8910 </p>
+    </div>
+    
+  </body>
+</html>

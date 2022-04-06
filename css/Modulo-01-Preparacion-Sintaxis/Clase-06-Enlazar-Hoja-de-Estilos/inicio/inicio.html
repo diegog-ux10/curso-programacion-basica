@@ -1,0 +1,103 @@
+<!--
+Vincular el archivo CSS
+
+¡Perfecto! Separamos con éxito la estructura (HTML) del estilo (CSS), pero la página web aún se ve insulsa. ¿Por qué?
+
+Cuando los códigos HTML y CSS están en archivos separados, los archivos deben estar vinculados. De lo contrario, el archivo HTML no podrá ubicar el código CSS y no se aplicará el estilo.
+
+Puede usar el elemento <link> para vincular archivos HTML y CSS. El elemento <link> debe colocarse dentro del encabezado del archivo HTML. Es una etiqueta de cierre automático y requiere los siguientes atributos:
+
+href: al igual que el elemento ancla, el valor de este atributo debe ser la dirección o la ruta al archivo CSS.
+
+rel: este atributo describe la relación entre el archivo HTML y el archivo CSS. Debido a que está vinculando a una hoja de estilo, el valor debe establecerse en stylesheet.
+
+Al vincular un archivo HTML y un archivo CSS, el elemento <link> tendrá el siguiente aspecto:
+
+<link href='https://www.7even.com/stylesheets/style.css' rel='stylesheet'>
+
+Tenga en cuenta que en el ejemplo anterior, la ruta a la hoja de estilo es una URL:
+
+https://www.7even.com/stylesheets/style.css
+
+Especificar la ruta a la hoja de estilo mediante una URL es una forma de vincular una hoja de estilo.
+
+Si el archivo CSS está almacenado en el mismo directorio que su archivo HTML, puede especificar una ruta relativa en lugar de una URL, así:
+
+<link href='./style.css' rel='stylesheet'>
+
+Usar una ruta relativa es una forma muy común de vincular una hoja de estilo.
+-->
+
+<!--
+1. Vinculemos la hoja de estilo estilos.css al archivo HTML inicio.html.
+
+Primero, agregue un elemento <link> dentro de la sección <head>.
+
+2. A continuación, agregue el atributo href al elemento <link> y configúrelo igual a estilos.css.
+
+¿Ya notas algún cambio?
+
+3. Finalmente, agregue el atributo rel y configúrelo en el valor correcto.
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Vacation World</title>
+</head>
+
+<body>
+  <img src='https://content.codecademy.com/courses/freelance-1/unit-2/explorer.jpeg' />
+  <h1 class='title'>Top Vacation Spots</h1>
+  <h5>By: Stacy Gray</h5>
+  <h6>Published: 2 Days Ago</h6>
+
+  <p>The world is full of fascinating places. Planning the perfect vacation involves packing up, leaving home, and experiencing something new.</p>
+
+  <h2 class='destination'>1. Florence, Italy</h2>
+  <div class='description'>A city-size shrine to the Renaissance, Florence offers frescoes, sculptures, churches, palaces, and other monuments from the richest cultural flowering the world has known. Names from its dazzling historical past; Dante, Michelangelo, Galileo, Machiavelliare are some of the most resonant of the medieval age. <a href='https://www.nationalgeographic.com/travel/destination/florence' target='_blank'>Learn More</a>.
+    <h5>Top Attractions</h5>
+    <ul>
+      <li>Museums</li>
+      <li>Bike Tours</li>
+      <li>Historical Monuments</li>
+    </ul>
+  </div>
+
+  <h2 class='destination'>2. Beijing, China</h2>
+  <div class='description'>A city in the midst of reinventing itself and continuing to build on the success of the 2008 Summer Olympics, Beijing is a place of frenzied construction. New housing, new roads, and new sports venues seem to spring up overnight. At the same time, the capital of the Peoples Republic of China remains an epicenter of tradition, with the treasures of nearly 2,000 years as the imperial capital still on view in the famed Forbidden City and in the luxuriant pavilions and gardens of the Summer Palace.
+    <a href='https://www.nationalgeographic.com/travel/destination/beijing' target='_blank'>Learn More</a>.
+    <h5>Top Attractions</h5>
+    <ul>
+      <li>Biking</li>
+      <li>Historical Sites</li>
+      <li>Restaurants and Dining</li>
+    </ul>
+  </div>
+
+  <h2 class='destination'>3. Seoul, South Korea</h2>
+  <div class='description'>The Korean capital is a city of contrasts. Fourteenth-century city gates squat in the shadow of 21st-century skyscrapers, while the broad Han River is back-dropped by granite mountains rising in the city center complete with alpine highways speeding around their contours and temples nestling among their crags. Fashionable, gadget-laden youths battle for sidewalk space with fortune-tellers and peddlers, while tiny neighborhoods of traditional cottages contrast with endless ranks of identical apartments.
+    <a href='https://www.nationalgeographic.com/travel/destination/seoul' target='_blank'>Learn More</a>.
+    <h5>Top Attractions</h5>
+    <ul>
+      <li>Parasailing</li>
+      <li>Segway Tours</li>
+      <li>Spas and Resorts</li>
+    </ul>
+  </div>
+
+  <h2> More Destinations </h2>
+  <ul>
+    <li><h4 class='destination'>Jackson Hole, Wyoming</h4></li>
+    <li><h4 class='destination'>Cape Town, South Africa</h4></li>
+    <li><h4 class='destination'>La Paz, Bolivia</h4></li>
+  </ul>
+
+  <p>&mdash;Best of luck with your travels, and be sure to send pictures and stories. We'd love to hear them!</p>
+
+
+</body>
+
+</html>
