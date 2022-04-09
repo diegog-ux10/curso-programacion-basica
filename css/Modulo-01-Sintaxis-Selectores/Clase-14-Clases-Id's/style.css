@@ -1,0 +1,76 @@
+/*
+Clases e id's
+
+CSS puede seleccionar elementos HTML por su tipo, clase e ID. Las clases e ID de CSS tienen diferentes propósitos, lo que puede afectar cuál usa para diseñar elementos HTML.
+
+Las clases CSS están destinadas a ser reutilizadas en muchos elementos. Al escribir clases de CSS, puede diseñar elementos de varias maneras mezclando clases. Por ejemplo, imagine una página con dos titulares. Un título debe ser negrita y azul, y el otro debe ser negrita y verde. En lugar de escribir reglas CSS separadas para cada título que repiten el código del otro, es mejor escribir una regla CSS .bold, una regla CSS .green y una regla CSS .blue. Luego, puede asignar a un título las clases verdes en negrita y al otro las clases azules en negrita.
+
+Si bien las clases están destinadas a usarse muchas veces, una ID está diseñada para diseñar solo un elemento. Como aprenderá en el siguiente ejercicio, los ID anulan los estilos de tipos y clases. Dado que los ID anulan estos estilos, deben usarse con moderación y solo en elementos que deben aparecer siempre iguales.
+
+*/
+
+/*
+1. Para demostrar el uso de clases en varios elementos, demos a algunos elementos el mismo estilo.
+
+En index.html, hay cuatro elementos <h2>. Dé a cada uno de ellos una clase de heading-background.
+
+2. Ahora, demos un estilo único a un solo elemento usando ID.
+
+En la línea 13 de index.html, hay un elemento <h6> que muestra la hora en que se publicó el artículo en la página.
+
+Agregue un atributo id al <h6> y asígnele un valor de publish-time.
+
+3. Luego, en style.css, cree un conjunto de reglas que apunte a la nueva clase heading-background y asígnele una declaración de:
+
+background-color: aqua;
+
+Observe en el navegador cómo todos los elementos <h2> ahora tienen el mismo estilo. Esta clase de fondo de encabezado puede continuar aplicándose a cualquier elemento al que desee otorgar ese estilo increíble.
+
+4. Finalmente, en style.css, cree otro conjunto de reglas usando el selector de ID publish-time. Agrega la declaración:
+
+color: gray;
+
+Dado que las identificaciones son de un solo uso, este elemento ahora tiene una identificación única que no se puede usar nuevamente en este documento.
+
+*/
+
+* {
+  border: 1px red solid;
+}
+
+
+h1 {
+  color: maroon;
+}
+
+p {
+  color: green;
+}
+
+.title {
+  color: teal;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+#article-title {
+  font-family: cursive;
+}
+
+a[href*='florence'] {
+  color: lightgreen;
+}
+
+a[href*='beijing'] {
+  color: lightblue;
+}
+
+a[href*='seoul'] {
+  color: lightpink;
+}
+
+a:hover {
+  color: darkorange;
+}

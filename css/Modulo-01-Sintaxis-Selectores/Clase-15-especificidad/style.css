@@ -1,0 +1,99 @@
+/*
+Especificidad
+
+La especificidad es el orden en que el navegador decide qué estilos CSS se mostrarán. Una mejor práctica en CSS es aplicar estilo a los elementos utilizando el grado más bajo de especificidad para que, si un elemento necesita un nuevo estilo, sea fácil de anular.
+
+Los ID son el selector más específico en CSS, seguidos de las clases y, por último, el tipo. Por ejemplo, considere el siguiente HTML y CSS:
+
+<h1 class='headline'>Breaking News</h1>
+
+h1 {
+  color: red;
+}
+ 
+.headline {
+  color: firebrick;
+}
+
+En el código de ejemplo anterior, el color del encabezado se establecería en firebrick, ya que el selector de clase es más específico que el selector de tipo. Si se agregara un atributo de ID (y un selector) al código anterior, los estilos dentro del cuerpo del selector de ID anularían todos los demás estilos del encabezado.
+
+Con el tiempo, a medida que los archivos crecen con el código, muchos elementos pueden tener ID, lo que puede dificultar la edición de CSS, ya que se debe crear un estilo nuevo y más específico para cambiar el estilo de un elemento.
+
+Para que los estilos sean fáciles de editar, lo mejor es diseñar con un selector de tipo, si es posible. Si no, agregue un selector de clase. Si eso no es lo suficientemente específico, considere usar un selector de ID.
+
+https://developer.mozilla.org/es/docs/Web/CSS/Specificity
+*/
+
+/*
+1. Para comparar la especificidad de tipo, clase e ID, agreguemos una clase y un ID a un elemento existente.
+
+En la línea 12 de index.html, hay un elemento <h5> con el nombre del autor. Asigne al elemento una clase de author-class y una ID de author-id.
+
+2. El elemento ahora tiene 3 formas de seleccionarlo, por tipo, clase e ID. Agregue los 3 conjuntos de reglas siguientes al final de style.css utilizando cada uno de los selectores:
+
+h5 {
+  color: yellow;
+}
+ 
+.author-class {
+  color: pink;
+}
+ 
+#author-id {
+  color: cornflowerblue;
+}
+
+Cada una de estas reglas selecciona el mismo elemento de forma diferente. ¿Qué estilo ganará la “guerra de la especificidad”? ¡abre la página index.html en el navegador para averiguarlo!
+
+Debido a que ID es el selector más específico, el elemento cambiará a cornflower blue. Es posible que haya notado que los otros elementos <h5> cambiaron a amarillo. Esto se debe a que el selector más específico (y único) que tienen es su tipo.
+
+*/
+
+* {
+  border: 1px red solid;
+}
+
+
+h1 {
+  color: maroon;
+}
+
+p {
+  color: green;
+}
+
+.title {
+  color: teal;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+#article-title {
+  font-family: cursive;
+}
+
+a[href*='florence'] {
+  color: lightgreen;
+}
+
+a[href*='beijing'] {
+  color: lightblue;
+}
+
+a[href*='seoul'] {
+  color: lightpink;
+}
+
+a:hover {
+  color: darkorange;
+}
+
+.heading-background {
+  background-color: aqua;
+}
+
+#publish-time {
+  color: gray;
+}

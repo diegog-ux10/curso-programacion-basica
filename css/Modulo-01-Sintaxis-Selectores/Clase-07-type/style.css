@@ -1,0 +1,32 @@
+/*
+Type
+
+Recuerda que las declaraciones son una parte fundamental de CSS porque aplican un estilo a un elemento seleccionado. Pero, ¿cómo decide qué elementos obtendrán el estilo? Con selector.
+
+Se utiliza un selector para apuntar a los elementos HTML específicos a los que se aplicará el estilo de la declaración. Un selector con el que quizás ya esté familiarizado es el selector de type. Tal como sugiere su nombre, el selector de type coincide con el tipo del elemento en el documento HTML.
+
+En la lección anterior, cambió el color de un elemento de párrafo.
+
+p {
+  color: green;
+}
+
+¡Esta es una instancia del uso del selector de type! El tipo de elemento es p, que proviene de la etiqueta HTML <p>.
+
+Algunas notas importantes sobre el selector de type:
+
+El selector de type no incluye los corchetes angulares.
+Dado que los tipos de elementos a menudo se denominan por su nombre de etiqueta de apertura, el selector de type a veces se denomina nombre de etiqueta o selector de elemento.
+
+*/
+
+/*
+1. Agregue un conjunto de reglas usando el selector de type para apuntar a todos los elementos <h1>. Deje el bloque de declaración ({ }).
+
+Dentro de las llaves del selector h1, agregue la siguiente declaración:
+
+color: maroon;
+
+Tenga en cuenta que el contenido de la página web se actualizará porque ya hemos vinculado style.css a index.html.
+
+*/

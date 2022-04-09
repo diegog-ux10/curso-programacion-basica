@@ -1,0 +1,98 @@
+/*
+Combinador de descendientes
+
+Además de encadenar selectores para seleccionar elementos, CSS también admite la selección de elementos que están anidados dentro de otros elementos HTML, también conocidos como descendientes. Por ejemplo, considere el siguiente HTML:
+
+<ul class='main-list'>
+  <li> ... </li>
+  <li> ... </li>
+  <li> ... </li>
+</ul>
+
+Los elementos <li> anidados son descendientes del elemento <ul> y se pueden seleccionar con el combinador de descendientes así:
+
+.main-list li {
+ 
+}
+
+En el ejemplo anterior, .main-list selecciona el elemento con la clase .main-list (el elemento <ul>). Los descendientes <li> se seleccionan añadiendo li al selector, separados por un espacio. Esto da como resultado .main-list li como el selector final.
+
+Seleccionar elementos de esta manera puede hacer que nuestros selectores sean aún más específicos al asegurarse de que aparezcan en el contexto que esperamos.
+
+*/
+
+/*
+1. En index.html, dentro de cada div de clase description, hay un elemento <h5> con el texto "Top Attractions". Son un poco difíciles de leer ya que se volvieron amarillos. ¡Arreglemos eso!
+
+En estilo.css Agregue un conjunto de reglas que use el combinador de descendientes para apuntar solo a los descendientes <h5> de elementos con la clase .description.
+
+2. Dentro de las llaves del selector, agregue una declaración de:
+
+color: blueviolet;
+
+*/
+
+* {
+  border: 1px red solid;
+}
+
+
+h1 {
+  color: maroon;
+}
+
+p {
+  color: green;
+}
+
+.title {
+  color: teal;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+#article-title {
+  font-family: cursive;
+}
+
+a[href*='florence'] {
+  color: lightgreen;
+}
+
+a[href*='beijing'] {
+  color: lightblue;
+}
+
+a[href*='seoul'] {
+  color: lightpink;
+}
+
+a:hover {
+  color: darkorange;
+}
+
+.heading-background {
+  background-color: aqua;
+}
+
+#publish-time {
+  color: gray;
+}
+
+h5 {
+  color: yellow;
+}
+ 
+.author-class {
+  color: pink;
+}
+ 
+#author-id {
+  color: cornflowerblue;
+}
+
+h2.destination {
+  font-family: Tahoma;
+}

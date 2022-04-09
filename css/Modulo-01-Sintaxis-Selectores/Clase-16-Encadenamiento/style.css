@@ -1,0 +1,85 @@
+/*
+Encadenamiento
+
+Al escribir reglas CSS, es posible requerir que un elemento HTML tenga dos o más selectores CSS al mismo tiempo.
+
+Esto se hace combinando varios selectores, a lo que nos referiremos como encadenamiento. Por ejemplo, si hubiera una clase especial para los elementos <h1>, el CSS se vería así:
+
+h1.especial {
+ 
+}
+
+El código anterior seleccionaría solo los elementos <h1> con una clase especial. Si un elemento <p> también tuviera una clase especial, la regla del ejemplo no aplicaría estilo al párrafo.
+
+*/
+
+/*
+1. Usemos el encadenamiento para seleccionar solo los elementos <h2> con destinos y agregarles un estilo.
+
+En style.css, escribe un selector de CSS para elementos <h2> con una clase de .destination. Dentro de las llaves del selector, agregue esta declaración:
+
+font-family: Tahoma;
+
+Esto cambiará la fuente de los elementos h2 que también tienen el destino de la clase. El último elemento <h2> ("More Destinations") permanecerá sin cambios.
+*/
+
+* {
+  border: 1px red solid;
+}
+
+
+h1 {
+  color: maroon;
+}
+
+p {
+  color: green;
+}
+
+.title {
+  color: teal;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+#article-title {
+  font-family: cursive;
+}
+
+a[href*='florence'] {
+  color: lightgreen;
+}
+
+a[href*='beijing'] {
+  color: lightblue;
+}
+
+a[href*='seoul'] {
+  color: lightpink;
+}
+
+a:hover {
+  color: darkorange;
+}
+
+.heading-background {
+  background-color: aqua;
+}
+
+#publish-time {
+  color: gray;
+}
+
+h5 {
+  color: yellow;
+}
+ 
+.author-class {
+  color: pink;
+}
+ 
+#author-id {
+  color: cornflowerblue;
+}

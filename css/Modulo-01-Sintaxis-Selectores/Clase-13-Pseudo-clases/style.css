@@ -1,0 +1,72 @@
+/*
+Pseudo-clase
+
+Es posible que haya observado cómo la apariencia de ciertos elementos puede cambiar, o estar en un estado diferente, después de ciertas interacciones del usuario. Por ejemplo:
+
+Cuando hace clic en un elemento <input>, se agrega un borde azul que muestra que está enfocado.
+
+Cuando hace clic en un enlace azul <a> para visitar otra página, pero cuando regresa, el texto del enlace es morado.
+
+Cuando está completando un formulario y el botón Enviar está atenuado y deshabilitado. 
+
+Pero cuando se completaron todos los campos, el botón tiene un color que muestra que está activo.
+
+¡Todos estos son ejemplos de selectores de pseudoclase en acción! De hecho, :focus, :visited, :disabled y :active son todas pseudoclases. Factores como la interacción del usuario, la navegación del sitio y la posición en el árbol del documento pueden dar a los elementos un estado diferente con pseudoclase.
+
+Una pseudoclase se puede adjuntar a cualquier selector. Siempre se escribe con dos puntos: seguido de un nombre. Por ejemplo p:hover.
+
+p:hover {
+  background-color: lime;
+}
+
+En el código anterior, siempre que el mouse se desplace sobre un elemento de párrafo, ese párrafo tendrá un fondo de color lima.
+
+*/
+
+/*
+1. Agregue un conjunto de reglas al final de style.css que seleccione los elementos <a> en la página. A continuación, agregue una pseudoclase :hover al selector que acaba de crear.
+
+2. Por último, establezca el color del texto en naranja oscuro agregando la siguiente declaración CSS dentro del bloque de declaración:
+
+color: darkorange;
+
+Ahora, cuando pasa el mouse sobre el texto "Learn more", el color de la fuente cambia a naranja oscuro.
+
+*/
+
+* {
+  border: 1px red solid;
+}
+
+
+h1 {
+  color: maroon;
+}
+
+p {
+  color: green;
+}
+
+.title {
+  color: teal;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+#article-title {
+  font-family: cursive;
+}
+
+a[href*='florence'] {
+  color: lightgreen;
+}
+
+a[href*='beijing'] {
+  color: lightblue;
+}
+
+a[href*='seoul'] {
+  color: lightpink;
+}

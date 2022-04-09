@@ -1,0 +1,46 @@
+/*
+Clase
+
+CSS no se limita a seleccionar elementos por su tipo. Como sabes, los elementos HTML también pueden tener atributos. Cuando se trabaja con HTML y CSS, un atributo de clase es una de las formas más comunes de seleccionar un elemento.
+
+Por ejemplo, considere el siguiente HTML:
+
+<p class='brand'>Empresa exclusiva de calzado</p>
+
+El elemento de párrafo del ejemplo anterior tiene un atributo de clase dentro de la etiqueta de apertura del elemento <p>. El atributo de clase se establece en 'brand'. Para seleccionar este elemento usando CSS, podemos crear un conjunto de reglas con un selector de clase .brand.
+
+.brand {
+ 
+}
+
+Para seleccionar un elemento HTML por su clase usando CSS, se debe anteponer un punto (.) al nombre de la clase. En el ejemplo anterior, la clase es brand, por lo que el selector de CSS para ella es .brand.
+
+*/
+
+/*
+1. En la línea 11 de index.html hay un elemento <h1> con la clase 'title'.(linea 11 del archivo index.html)
+
+Ahora, crea un conjunto de reglas que seleccione ese elemento HTML usando la classe 'title'.
+
+Dentro de las llaves del selector .title, agregue la declaración:
+
+color: teal;
+
+Este código cambiará el color del h1 con la clase de title a verde azulado.
+
+Veremos en un ejercicio posterior por qué usar .title anula el selector h1.
+
+*/
+
+* {
+  border: 1px red solid;
+}
+
+
+h1 {
+  color: maroon;
+}
+
+p {
+  color: green;
+}

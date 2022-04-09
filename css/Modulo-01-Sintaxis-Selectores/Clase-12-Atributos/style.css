@@ -1,0 +1,81 @@
+/*
+Atributo
+
+Puede recordar que algunos elementos HTML usan atributos para agregar detalles o funciones adicionales al elemento. Algunos atributos familiares pueden ser href y src, pero hay muchos más, ¡incluidos class e id!
+
+El selector de atributos se puede utilizar para apuntar a elementos HTML que ya contienen atributos. Los elementos del mismo tipo pueden orientarse de manera diferente por su atributo o valor de atributo. Esto alivia la necesidad de agregar código nuevo, como los atributos class o id.
+
+Los atributos se pueden seleccionar de manera similar a los tipos, clases e ID.
+
+[href]{
+   color: magenta;
+}
+
+La sintaxis más básica es un atributo entre corchetes. En el ejemplo anterior: [href] apuntaría a todos los elementos con un atributo href y establecería el color en magenta.
+
+Y puede volverse más granular a partir de ahí al agregar valores de type y/o atributo. Una forma es usando type[atributo*=valor]. En resumen, este código selecciona un elemento donde el atributo contiene cualquier instancia del valor especificado. Echemos un vistazo a un ejemplo.
+
+<img src='/imagenes/estaciones/frio/invierno.jpg'>
+<img src='/images/temporadas/cálido/verano.jpg'>
+
+El código HTML anterior representa dos elementos <img>, cada uno de los cuales contiene un atributo src con un valor equivalente a un enlace a un archivo de imagen.
+
+img[src*='invierno'] {
+  altura: 50px;
+}
+ 
+img[src*='verano'] {
+  altura: 100px;
+}
+
+Ahora eche un vistazo al código CSS anterior. El selector de atributos se utiliza para orientar cada imagen individualmente.
+
+El primer conjunto de reglas busca un elemento img con un atributo de src que contenga la cadena 'invierno' y establece la altura en 50 px.
+
+El segundo conjunto de reglas busca un elemento img con un atributo de src que contenga la cadena 'summer' y establece la altura en 100 px.
+
+Observe cómo no fue necesario agregar un nuevo marcado HTML (como una clase o una identificación), y todavía pudimos modificar los estilos de cada imagen de forma independiente. ¡Esta es una de las ventajas de usar el selector de atributos!
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors#syntax
+
+*/
+
+/*
+1. Para utilizar el selector de atributos para seleccionar el elemento <a> con un valor de atributo href que contenga "florencia", agregue el siguiente código a style.css:
+
+a[href*='florence'] {
+  color: lightgreen;
+}
+
+Observe cómo solo el enlace "Learn More" en el párrafo de Florencia, Italia, cambió a verde claro.
+
+2. Luego, en style.css, use el selector de atributos para seleccionar el elemento <a> que tiene un valor de atributo href que contiene 'beijing'. Agregue una declaración de color: lightblue.
+
+3. Finalmente, use el selector de atributos para cambiar el elemento <a> que tiene un valor de atributo href que contiene 'seúl' a lightpink.
+
+*/
+
+* {
+  border: 1px red solid;
+}
+
+
+h1 {
+  color: maroon;
+}
+
+p {
+  color: green;
+}
+
+.title {
+  color: teal;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+#article-title {
+  font-family: cursive;
+}

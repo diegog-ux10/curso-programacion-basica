@@ -1,0 +1,50 @@
+/*
+Múltiples Clases
+
+Podemos usar CSS para seleccionar el atributo de clase de un elemento HTML por nombre. Y hasta ahora, hemos seleccionado elementos usando solo un nombre de clase por elemento. Si cada elemento HTML tuviera una sola clase, toda la información de estilo para cada elemento requeriría una nueva clase.
+
+Afortunadamente, es posible agregar más de un nombre de clase al atributo de clase de un elemento HTML.
+
+Por ejemplo, quizás haya un elemento de encabezado que deba ser verde y negrita. Podrías escribir dos conjuntos de reglas CSS así:
+
+.green {
+  color: green;
+}
+ 
+.bold {
+  font-weight: bold;
+}
+
+Luego, podría incluir ambas clases en un elemento HTML como este:
+
+<h1 class='green bold'> ... </h1>
+
+Podemos agregar varias clases al atributo de clase de un elemento HTML separándolas con un espacio. Esto nos permite mezclar y combinar clases de CSS para crear muchos estilos únicos sin tener que escribir una clase personalizada para cada combinación de estilos necesaria.
+
+*/
+
+/*
+1. En index.html, en la línea 11, hay un elemento <h1> con una clase de title. Agregue una segunda clase denominada uppercase a este elemento.
+
+2. A continuación, regresa a style.css y agregue un conjunto de reglas con el selector de clase .uppercase. Luego, agregue la siguiente declaración dentro de las llaves.
+
+text-transform: uppercase;
+
+*/
+
+* {
+  border: 1px red solid;
+}
+
+
+h1 {
+  color: maroon;
+}
+
+p {
+  color: green;
+}
+
+.title {
+  color: teal;
+}

@@ -1,0 +1,49 @@
+/*
+ID
+
+A menudo, es importante seleccionar un solo elemento con CSS para darle su propio estilo único. Si un elemento HTML necesita un estilo único, podemos darle una identificación usando el atributo id.
+
+<h1 id='large-title'> ... </h1>
+
+A diferencia de la clase que acepta múltiples valores y se puede usar ampliamente en un documento HTML, la identificación de un elemento solo puede tener un valor único y solo se puede usar una vez por página.
+
+Para seleccionar la identificación de un elemento con CSS, anteponemos el nombre de la identificación con un signo de número (#). Por ejemplo, si quisiéramos seleccionar el elemento HTML en el ejemplo anterior, se vería así:
+
+#large-title {
+ 
+}
+
+El nombre de identificación es título grande, por lo tanto, el selector de CSS para él es #títulogrande.
+*/
+
+/*
+1. En la línea 11 de index.html, dentro de la etiqueta de apertura h1 y después del atributo de clase, agregue un id con el valor article-title.
+
+2. Regresa a style.css. Agregue un conjunto de reglas con el selector de ID para apuntar al ID del article-title. Dentro de sus llaves, escribe la declaración:
+
+font-family: cursive;
+
+¡Verás que el título cambia a una fuente cursiva que aporta belleza y elegancia a la página! Está bien, tal vez no tanto. Pero la fuente cambia.
+
+*/
+
+* {
+  border: 1px red solid;
+}
+
+
+h1 {
+  color: maroon;
+}
+
+p {
+  color: green;
+}
+
+.title {
+  color: teal;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

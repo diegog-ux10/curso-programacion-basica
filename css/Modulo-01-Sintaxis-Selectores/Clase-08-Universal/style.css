@@ -1,0 +1,35 @@
+/*
+Universal
+
+Aprendió cómo el selector de tipo selecciona todos los elementos de un tipo dado. Pues bien, el selector universal selecciona todos los elementos de cualquier tipo.
+
+Dirigirse a todos los elementos de la página tiene algunos casos de uso específicos, como restablecer el estilo predeterminado del navegador o seleccionar todos los elementos secundarios de un elemento principal. No se preocupe si no comprende los casos de uso en este momento; los abordaremos más adelante en nuestro viaje de CSS.
+
+El selector universal usa el carácter * en el mismo lugar donde especificó el selector de tipo en un conjunto de reglas, así:
+
+* {
+  font-family: Verdana;
+}
+
+En el código anterior, cada elemento de texto en la página cambiará su fuente a Verdana.
+
+*/
+
+/*
+1. Para ver cómo el selector universal apunta a todos los elementos de una página, copie la regla a continuación y péguela en style.css.
+
+* {
+  borde: 1px red solid;
+}
+
+Dado que el selector universal apunta a todos los elementos, cada elemento de la página ahora tiene un borde rojo. No es un aspecto agradable a la vista, pero puedes ver cómo se han modificado todos los elementos.
+
+*/
+
+h1 {
+  color: maroon;
+}
+
+p {
+  color: green;
+}
