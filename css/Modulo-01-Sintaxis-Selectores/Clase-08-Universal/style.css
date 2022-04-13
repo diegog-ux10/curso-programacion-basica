@@ -26,6 +26,10 @@ Dado que el selector universal apunta a todos los elementos, cada elemento de la
 
 */
 
+* {
+  border: 1px solid red;
+}
+
 h1 {
   color: maroon;
 }

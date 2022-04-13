@@ -47,3 +47,7 @@ p {
 .uppercase {
   text-transform: uppercase;
 }
+
+#italia {
+  font-size: 100px;
+}

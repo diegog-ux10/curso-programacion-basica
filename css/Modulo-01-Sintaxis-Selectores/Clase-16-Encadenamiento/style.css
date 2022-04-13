@@ -14,6 +14,7 @@ El código anterior seleccionaría solo los elementos <h1> con una clase especia
 */
 
 /*
+
 1. Usemos el encadenamiento para seleccionar solo los elementos <h2> con destinos y agregarles un estilo.
 
 En style.css, escribe un selector de CSS para elementos <h2> con una clase de .destination. Dentro de las llaves del selector, agregue esta declaración:

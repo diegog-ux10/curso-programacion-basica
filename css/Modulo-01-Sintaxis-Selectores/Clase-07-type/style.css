@@ -30,3 +30,7 @@ color: maroon;
 Tenga en cuenta que el contenido de la página web se actualizará porque ya hemos vinculado style.css a index.html.
 
 */
+
+h1 {
+  color: maroon;
+}

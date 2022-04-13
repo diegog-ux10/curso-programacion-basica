@@ -96,3 +96,11 @@ h5 {
 h2.destination {
   font-family: Tahoma;
 }
+
+.description .primero {
+  color: blueviolet;
+}
+
+.description h5 {
+  color: darkblue; 
+}
