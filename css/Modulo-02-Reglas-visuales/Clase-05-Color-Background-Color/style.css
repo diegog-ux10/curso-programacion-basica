@@ -1,0 +1,118 @@
+/*
+Color y color de fondo
+
+Antes de discutir los detalles del color, es importante hacer dos distinciones sobre el color. El color puede afectar los siguientes aspectos del diseño:
+
+Color de primer plano
+Color de fondo
+
+El color de primer plano es el color en el que aparece un elemento. Por ejemplo, cuando se aplica estilo a un título para que aparezca verde, se ha aplicado estilo al color de primer plano del título. Por el contrario, cuando se aplica estilo a un encabezado de modo que su fondo se vea amarillo, se ha aplicado estilo al color de fondo del encabezado.
+
+En CSS, estos dos aspectos de diseño se pueden diseñar con las dos propiedades siguientes:
+
+- color: esta propiedad da estilo al color de primer plano de un elemento
+- background-color: esta propiedad da estilo al color de fondo de un elemento
+
+h1 {
+  color: red;
+  background-color: blue;
+}
+
+En el ejemplo anterior, el texto del encabezado aparecerá en rojo y el fondo del encabezado aparecerá en azul.
+
+*/
+
+/*
+1. Eche un vistazo a la leyenda de la imagen en la parte inferior de la página. En style.css, establezca el color de fondo en el selector .caption en blanco.
+
+2. Luego, en el mismo conjunto de reglas, establezca el color del texto en negro. ¡Eso debería hacer que el texto sea un poco más fácil de leer!.
+
+*/
+
+body {
+    /* Old browsers */
+    background: #141E30;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(-45deg, #35577D, #141E30);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(-45deg, #35577D, #141E30);
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    color: #FFF;
+    font-size: 2em;
+    padding-top: 100px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  h2 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 100;
+    font-size: 22px;
+    line-height: 24px;
+    padding-bottom: 30px;
+    text-align: left;
+    width: 70%;
+  }
+  
+  p {
+    color: aliceblue;
+    line-height: 1.3em;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .byline {
+    font-family: Helvetica;
+    color: rgba(255, 255, 255, 0.5);
+    float: left;
+    font-size: 14px;
+    padding-left: 10px;
+    text-transform: uppercase;
+  }
+  
+  .caption {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 14px;
+    margin-left: 20px;
+    padding: 10px;
+    position: relative;
+    top: 80%;
+    width: 60%;
+  }
+  
+  .content {
+    padding: 40px;
+  }
+  
+  .image {
+    background-image: url("https://content.codecademy.com/courses/web-101/unit-4/htmlcss1-img_soccer.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+  }
+  
+  .writer-img {
+    -webkit-box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
+    -moz-box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
+    box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
+    float: left;
+    width: 50px;
+  }
+  
+  h1, h2 {
+    font-family: Georgia;
+  }
+  
+  p {
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: bold;
+  }

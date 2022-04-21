@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Estilos externos -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- Estilos internos -->
+    <style>
+
+        /* selector universal */
+
+        /* * {
+            margin: 0;
+            padding: 0;
+        } */
+
+        /* selector por tipo */
+        
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        /* Selector por clases *//* Este sera el que más uses*/
+
+        .fondo-gris {
+            background-color: gray;
+        }
+
+        .alinear {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+        }
+
+
+
+        /* selector por ID *//*Este no debe usarse por lo general*/
+
+        /* #menu {
+            background-color: white;
+        } */
+
+
+
+        /*Seleccion por tipo y clase*/
+
+        header.alinear {
+            border: 2px solid blue;
+        }
+
+
+        /*Seleccionar multiples elementos */
+
+        li, p, span, small {
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 32px;
+        }
+
+        span, small {
+            color: grey;
+        }
+
+        /*Seleccionar Elementos Anidados*/
+
+        /* section div {
+            background-color: red;
+        } */
+
+        /*Seleccionar hijo directo*/
+
+        section > div {
+            border: 4px solid red;
+        }
+
+        /*Seleccionar un elemento apartir de otro ~ + */
+
+        li.apartir {
+            border-bottom: 3px solid black;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!--Cabecera de la pagina-->
+    <header class="fondo-gris alinear">
+        <nav id="menu">
+            <ul>
+                <a href="#" class="apartir"><li>Home</li></a>
+                <a href="#"><li>Contacto</li></a>
+                <a href="#"><li>Galeria</li></a>
+                <a href="#"><li>Sobre Nosotros</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Titulo principal -->
+    <h1>Bienvenidos a mi página</h1>
+    <span>La mejor página del mundo</span>
+    <br><br>
+    <small>Menu de Navegación</small>
+
+    <!-- menu de navegacion -->
+    <ul>
+        <a href="#gatos"><li>Fotos de Gatitos</li></a>
+        <a href="#perros"><li>Fotos de Conejos</li></a>
+        <a href="#pandas"><li>Fotos de Pandas</li></a>
+    </ul>
+
+    <div>No esta anidado</div>
+    <section id="gatos" class="alinear">
+        <div>
+            Estos es un div
+            <div>Div mas anidado</div>
+        </div>
+    </section>
+    <section id="perros" class="alinear">
+        <div>Estos es un div</div>
+    </section>
+    <section id="pandas" class="alinear">
+        <div>Estos es un div</div>
+    </section>
+
+    <footer class="fondo-gris alinear">
+        <p> © Derechos reservados | 7even™ | 2022 </p>
+
+        <ul>
+            <li class="apartir">Correo</li>
+            <li>Redes</li>
+            <li>Dirrecion</li>
+            <li>Telefono</li>
+        </ul>
+    </footer>
+
+
+    
+</body>
+</html>
