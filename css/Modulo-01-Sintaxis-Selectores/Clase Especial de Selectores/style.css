@@ -2,4 +2,16 @@
     height: 200px;
     width: 200px;
     border: 1px solid black;
+    margin: 50px auto;
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido {
+    width: 50%;
+    height: 50%;
+    color: white;
+    background-color: black;
 }

@@ -88,9 +88,64 @@
 
         /*Seleccionar un elemento apartir de otro ~ + */
 
-        li.apartir {
-            border-bottom: 3px solid black;
+    
+
+        /* Pseudo Selector */
+
+        header li:hover {
+            color: blueviolet;
+            border-bottom: 2px solid purple;
         }
+
+        input:focus {
+            border: 3px solid purple;
+            background-color: purple;
+        }
+
+        footer ul li:nth-child(2n) {
+            border-bottom: 2px solid purple;
+        }
+
+        p:only-child {
+            color: yellow;
+        }
+
+
+        section {
+            border: 2px solid black;
+        }
+
+        section:not(#pandas) {
+            background-color: aqua;
+        }
+      
+
+        /*Pseudo Elementos*/
+
+       div.cuadrado::after {
+           content: 'Before';
+           border: 1px solid black;
+       }
+
+       h1::before {
+           content: 'Pseudo-Elemento';
+           color: red;
+       }
+
+
+
+
+        /*Selector por Atributos*/
+
+        [type=text] {
+            width: 90%;
+            height: 100px;
+        }
+
+        [class*='37'] {
+            background-color: yellow;
+        }
+
 
 
 
@@ -106,34 +161,49 @@
                 <a href="#"><li>Galeria</li></a>
                 <a href="#"><li>Sobre Nosotros</li></a>
             </ul>
+            <label for="">Buscar</label>
+            <input type="text">
         </nav>
     </header>
 
     <!-- Titulo principal -->
+
+    <div class="cuadrado">
+        <div class="contenido">Contenido</div>
+    </div>
+
+    <span class="123745">Ejemplos</span>
+    <span class="123456">Ejemplos</span>
+
     <h1>Bienvenidos a mi página</h1>
     <span>La mejor página del mundo</span>
     <br><br>
     <small>Menu de Navegación</small>
 
+
     <!-- menu de navegacion -->
+    
     <ul>
         <a href="#gatos"><li>Fotos de Gatitos</li></a>
         <a href="#perros"><li>Fotos de Conejos</li></a>
         <a href="#pandas"><li>Fotos de Pandas</li></a>
     </ul>
 
-    <div>No esta anidado</div>
     <section id="gatos" class="alinear">
-        <div>
-            Estos es un div
-            <div>Div mas anidado</div>
-        </div>
+        <div>Primer div</div>
+        <div>Segundo div</div>        
+        <div>Tercer Div</div>
+        
     </section>
     <section id="perros" class="alinear">
-        <div>Estos es un div</div>
+        <div>Primer div</div>
+        <div>Segundo div</div>        
+        <div>Tercer Div</div>
     </section>
     <section id="pandas" class="alinear">
-        <div>Estos es un div</div>
+        <div>Primer div</div>
+        <div>Segundo div</div>        
+        <div>Tercer Div</div>
     </section>
 
     <footer class="fondo-gris alinear">
