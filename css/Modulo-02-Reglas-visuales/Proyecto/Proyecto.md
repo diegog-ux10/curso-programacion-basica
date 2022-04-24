@@ -53,5 +53,7 @@ Finalmente, hagamos que el fondo de la página sea más interesante.
 
 Dentro del selector de body, establezca la propiedad de imagen de fondo en esta URL:
 
+/hypnotize_
+
 
 
