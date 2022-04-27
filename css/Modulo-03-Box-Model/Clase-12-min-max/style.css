@@ -1,0 +1,171 @@
+/*
+Altura y anchura mínimas y máximas
+
+Debido a que una página web se puede ver a través de pantallas de diferentes tamaños de pantalla, el contenido de la página web puede sufrir esos cambios de tamaño. Para evitar este problema, CSS ofrece dos propiedades que pueden limitar qué tan estrecho o ancho se puede dimensionar el cuadro de un elemento:
+
+min-width: esta propiedad garantiza un ancho mínimo del cuadro de un elemento.
+max-width: esta propiedad garantiza un ancho máximo del cuadro de un elemento.
+
+p {
+  min-width: 300px;
+  max-width: 600px;
+}
+
+En el ejemplo anterior, el ancho de todos los párrafos no se reducirá por debajo de los 300 píxeles, ni excederá los 600 píxeles.
+
+El contenido, como el texto, puede volverse difícil de leer cuando la ventana del navegador se estrecha o se expande. Estas dos propiedades aseguran que el contenido sea legible al limitar los anchos mínimo y máximo de un elemento.
+
+También puede limitar la altura mínima y máxima de un elemento:
+
+min-height: esta propiedad garantiza una altura mínima para el cuadro de un elemento.
+
+max-height: esta propiedad garantiza una altura máxima de la caja de un elemento.
+
+p {
+  min-height: 150px;
+  max-height: 300px;
+}
+
+En el ejemplo anterior, la altura de todos los párrafos no se reducirá por debajo de los 150 píxeles y la altura no superará los 300 píxeles.
+
+¿Qué sucederá con el contenido del cuadro de un elemento si la propiedad de altura máxima se establece demasiado baja? Es posible que el contenido se derrame fuera de la caja, lo que resulta en contenido que no es legible. Aprenderá a solucionar este problema en el siguiente ejercicio.
+
+*/
+
+/*
+1. En style.css, establezca el ancho mínimo del elemento p en 200 píxeles.
+
+Una vez que haya hecho esto con éxito, cambie el tamaño del navegador y observe cómo el cuadro del párrafo ya no se reducirá por debajo de los 200 píxeles.
+
+2. A continuación, establezca el ancho máximo del elemento p en 800 píxeles.
+
+Una vez que haya hecho esto con éxito, cambie el tamaño del navegador y observe cómo el cuadro del párrafo ya no se expandirá más allá de los 800 píxeles.
+
+3. En style.css, establezca la altura mínima del elemento p en 200 píxeles.
+
+Una vez que haya hecho esto con éxito, cambie el tamaño del navegador y observe cómo la altura del cuadro del párrafo ya no se reducirá por debajo de los 200 píxeles.
+
+4. En style.css, establezca la altura máxima del elemento p en 300 píxeles.
+
+Una vez que haya hecho esto con éxito, cambie el tamaño del navegador y observe cómo la altura del cuadro del párrafo ya no se expandirá más allá de los 300 píxeles. Deberías ver tu texto desbordado. ¡En el próximo ejercicio, lo arreglaremos!
+
+*/
+
+body {
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navigation li {
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding: 20px;
+}
+
+.navigation  li.logo {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+#banner {
+  background-image: url("https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
+  background-size: cover;
+  background-position: bottom center;
+  width: 100%;
+  height: 700px;
+  
+}
+
+#banner .content h1 {
+  position: relative;
+  top: 50px;
+  margin: 0 auto;
+  width: 400px;
+  border: 3px solid white;
+  border-radius: 15px;
+}
+
+#main {
+  padding: 40px;
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: white;
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+}
+
+h2 {
+  color: red;
+  font-size: 14px;
+  line-height: 48px;
+  text-align: center;
+  border: red dotted 1px;
+  padding: 20px 30px;
+  margin: 30px 20px;
+}
+
+h3 {
+  color: red;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 20px 10px;
+}
+
+p {
+  color: grey;
+  font-size: 16px;
+  line-height: 48px;
+  padding: 10px 20px;
+  margin: 60px;
+}
+
+.pull-quote {
+  width: 350px;
+  margin: 0 auto;
+}
+
+.byline {
+  border-bottom: 1px solid LightGrey;
+  border-top: 1px solid LightGrey;
+  color: DarkGrey;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.share {
+  border: 1px solid LightGrey;
+  padding: 40px 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding: 14px;
+}
+
+.share a {
+  background: red;
+  border: 1px solid red;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.share a:hover {
+  background: white;
+  border: 1px solid red;
+  color: red;
+}

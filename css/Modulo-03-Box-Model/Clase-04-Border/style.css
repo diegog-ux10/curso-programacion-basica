@@ -1,0 +1,149 @@
+/*
+Bordes
+
+Un borde es una línea que rodea un elemento, como un marco alrededor de una pintura. Los bordes se pueden configurar con un ancho, estilo y color específicos:
+
+ancho: el grosor del borde. El grosor de un borde se puede establecer en píxeles o con una de las siguientes palabras clave: thin, medium, o thick.
+
+estilo: el diseño del borde. Los navegadores web pueden representar cualquiera de los 10 estilos diferentes. Algunos de estos estilos incluyen: none, dotted, y solid.
+
+color: el color del borde. Los navegadores web pueden reproducir colores utilizando algunos formatos diferentes, incluidas 140 palabras clave de color integradas.
+
+https://developer.mozilla.org/es/docs/Web/CSS/color_value
+
+p {
+  border: 3px solid coral;
+}
+
+En el ejemplo anterior, el borde tiene un ancho de 3 píxeles, un estilo sólido y un color coral. Las tres propiedades se establecen en una línea de código.
+
+El borde predeterminado es 'medium none color', donde color es el color actual del elemento. Si el ancho, el estilo o el color no están configurados en el archivo CSS, el navegador web asigna el valor predeterminado para esa propiedad.
+
+p.content-header {
+  height: 80px;
+  width: 240px;
+  border: solid coral;
+}
+
+En este ejemplo, el estilo del borde se establece en sólido y el color se establece en coral. El ancho no está establecido, por lo que el valor predeterminado es medium.
+
+*/
+
+/*
+1. Agregue un borde rojo dotted con un grosor de 1 píxel a todos los encabezados h2.
+
+2. Agregue un borde blanco sólido, con un ancho de 3 píxeles, a la regla #banner .content h1.
+*/
+
+* {
+  border: 2px red solid;
+}
+
+
+body {
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navigation li {
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.navigation  li.logo {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+#banner {
+  background-image: url("https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
+  background-size: cover;
+  background-position: bottom center;
+  width: 100%;
+  height: 700px;
+
+}
+
+#banner .content h1 {
+  position: relative;
+  top: 50px;
+  margin: 0 auto;
+  width: 400px;
+
+}
+
+#main {
+  padding: 40px;
+  text-align: center;
+  width: 400px;
+}
+
+h1 {
+  color: white;
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+}
+
+h2 {
+  color: red;
+  font-size: 14px;
+  line-height: 48px;
+  text-align: center;
+}
+
+h3 {
+  color: red;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 20px 10px;
+}
+
+p {
+  color: grey;
+  font-size: 16px;
+  line-height: 48px;
+}
+
+.pull-quote {
+  width: 350px;
+}
+
+.byline {
+  border-bottom: 1px solid LightGrey;
+  border-top: 1px solid LightGrey;
+  color: DarkGrey;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.share {
+  border: 1px solid LightGrey;
+  padding: 40px 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.share a {
+  background: red;
+  border: 1px solid red;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.share a:hover {
+  background: white;
+  border: 1px solid red;
+  color: red;
+}

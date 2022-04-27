@@ -1,0 +1,140 @@
+/*
+Radio del borde
+
+Desde que revelamos los bordes de las cajas, es posible que haya notado que los bordes resaltan la verdadera forma de la caja de un elemento: cuadrado. Gracias a CSS, un borde no tiene que ser cuadrado.
+
+Puede modificar las esquinas del cuadro de borde de un elemento con la propiedad border-radius.
+
+div.container {
+  border: 3px solid blue;
+  border-radius: 5px;
+}
+
+El código del ejemplo anterior establecerá las cuatro esquinas del borde en un radio de 5 píxeles (es decir, la misma curvatura que tendría un círculo con un radio de 5 píxeles).
+
+Puede crear un borde que sea un círculo perfecto creando primero un elemento con el mismo ancho y alto, y luego configurando el radio igual a la mitad del ancho del cuadro, que es 50%.
+
+div.container {
+  height: 60px;
+  width: 60px;
+  border: 3px solid blue;
+  border-radius: 50%;
+}
+
+El código del ejemplo anterior crea un <div> que es un círculo perfecto.
+*/
+
+/*
+1. En style.css, establezca el radio del borde de #banner .content h1 en 15 píxeles.
+
+Además, intente experimentar con otros valores de radio de borde y ejecute su código para ver el resultado.
+*/
+
+body {
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navigation li {
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.navigation  li.logo {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+#banner {
+  background-image: url("https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
+  background-size: cover;
+  background-position: bottom center;
+  width: 100%;
+  height: 700px;
+  
+}
+
+#banner .content h1 {
+  position: relative;
+  top: 50px;
+  margin: 0 auto;
+  width: 400px;
+  border: 3px solid white;
+}
+
+#main {
+  padding: 40px;
+  text-align: center;
+  width: 400px;
+}
+
+h1 {
+  color: white;
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+}
+
+h2 {
+  color: red;
+  font-size: 14px;
+  line-height: 48px;
+  text-align: center;
+  border: red dotted 1px;
+}
+
+h3 {
+  color: red;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 20px 10px;
+}
+
+p {
+  color: grey;
+  font-size: 16px;
+  line-height: 48px;
+}
+
+.pull-quote {
+  width: 350px;
+}
+
+.byline {
+  border-bottom: 1px solid LightGrey;
+  border-top: 1px solid LightGrey;
+  color: DarkGrey;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.share {
+  border: 1px solid LightGrey;
+  padding: 40px 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.share a {
+  background: red;
+  border: 1px solid red;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.share a:hover {
+  background: white;
+  border: 1px solid red;
+  color: red;
+}

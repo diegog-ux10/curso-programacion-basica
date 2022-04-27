@@ -1,0 +1,169 @@
+/*
+Desbordamiento
+
+Todos los componentes del modelo de caja comprenden el tamaño de un elemento. Por ejemplo, una imagen que tiene las siguientes dimensiones tiene 364 píxeles de ancho y 244 píxeles de alto.
+
+300 pixels wide
+200 pixels tall
+10 pixels padding on the left and right
+10 pixels padding on the top and bottom
+2 pixels border on the left and right
+2 pixels border on the top and bottom
+20 pixels margin on the left and right
+10 pixels margin on the top and bottom
+
+Las dimensiones totales (364 px por 244 px) se calculan sumando todas las dimensiones verticales juntas y todas las dimensiones horizontales juntas. A veces, estos componentes dan como resultado un elemento que es más grande que el área contenedora del padre.
+
+¿Cómo podemos asegurarnos de que podemos ver todo un elemento que es más grande que el área contenedora de su padre?
+
+La propiedad de desbordamiento controla lo que sucede con el contenido que se derrama o se desborda fuera de su caja. Los valores más utilizados son:
+
+hidden: cuando se establece en este valor, cualquier contenido que se desborde se ocultará a la vista.
+
+scroll: cuando se establece en este valor, se agregará una barra de desplazamiento al cuadro del elemento para que el resto del contenido se pueda ver desplazándose.
+
+visible: cuando se establece en este valor, el contenido de desbordamiento se mostrará fuera del elemento contenedor. Tenga en cuenta que este es el valor predeterminado.
+
+p {
+  overflow: scroll; 
+}
+
+En el ejemplo anterior, si el contenido de algún párrafo se desborda (quizás un usuario cambia el tamaño de la ventana del navegador), aparecerá una barra de desplazamiento para que los usuarios puedan ver el resto del contenido.
+
+La propiedad de desbordamiento se establece en un elemento principal para instruir a un navegador web sobre cómo representar elementos secundarios. Por ejemplo, si la propiedad de desbordamiento de un div está configurada para desplazarse, todos los elementos secundarios de este div mostrarán contenido desbordado con una barra de desplazamiento.
+
+Para una mirada más profunda al desbordamiento, incluidas propiedades adicionales como overflow-x y overflow-y que separan los valores horizontales y verticales, diríjase a la documentación de MDN.
+
+https://developer.mozilla.org/es/docs/Web/CSS/overflow
+*/
+
+/*
+1. Para ver el impacto de overflow: scroll, primero cambie la altura del elemento #main a 1000 píxeles.
+
+2. Configure el desbordamiento del elemento #main en scroll.
+
+Cuando se desplaza hacia abajo, debería aparecer una segunda barra de desplazamiento sobre la sección del párrafo. Es posible que deba expandir el componente del navegador para ver claramente este comportamiento.
+*/
+
+body {
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navigation li {
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding: 20px;
+}
+
+.navigation  li.logo {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+#banner {
+  background-image: url("https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
+  background-size: cover;
+  background-position: bottom center;
+  width: 100%;
+  height: 700px;
+  
+}
+
+#banner .content h1 {
+  position: relative;
+  top: 50px;
+  margin: 0 auto;
+  width: 400px;
+  border: 3px solid white;
+  border-radius: 15px;
+}
+
+#main {
+  padding: 40px;
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: white;
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+}
+
+h2 {
+  color: red;
+  font-size: 14px;
+  line-height: 48px;
+  text-align: center;
+  border: red dotted 1px;
+  padding: 20px 30px;
+  margin: 30px 20px;
+}
+
+h3 {
+  color: red;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 20px 10px;
+}
+
+p {
+  color: grey;
+  font-size: 16px;
+  line-height: 48px;
+  padding: 10px 20px;
+  margin: 60px;
+  min-width: 200px;
+  max-width: 800px;
+  min-height: 200px;
+  max-width: 300px;
+}
+
+.pull-quote {
+  width: 350px;
+  margin: 0 auto;
+}
+
+.byline {
+  border-bottom: 1px solid LightGrey;
+  border-top: 1px solid LightGrey;
+  color: DarkGrey;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.share {
+  border: 1px solid LightGrey;
+  padding: 40px 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding: 14px;
+}
+
+.share a {
+  background: red;
+  border: 1px solid red;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.share a:hover {
+  background: white;
+  border: 1px solid red;
+  color: red;
+}

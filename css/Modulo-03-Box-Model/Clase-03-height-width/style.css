@@ -1,0 +1,129 @@
+/*
+Width and Height (Alto y ancho)
+
+El contenido de un elemento tiene dos dimensiones: una altura y una anchura. De forma predeterminada, las dimensiones de un cuadro HTML se establecen para contener el contenido sin procesar del cuadro.
+
+Las propiedades de alto y ancho de CSS se pueden usar para modificar estas dimensiones predeterminadas.
+
+p {
+  height: 80px;
+  width: 240px;
+}
+
+En este ejemplo, la altura y el ancho de los elementos del párrafo se establecen en 80 píxeles y 240 píxeles, respectivamente; el px en el código anterior significa píxeles.
+
+Los píxeles le permiten establecer el tamaño exacto del cuadro de un elemento (Width and Height). Cuando el ancho y el alto de un elemento se configuran en píxeles, tendrá el mismo tamaño en todos los dispositivos; un elemento que llena la pantalla de una computadora portátil desbordará la pantalla de un dispositivo móvil.
+
+*/
+
+/*
+1. Agregue una altura de 700 píxeles a #banner.
+
+2. Establezca el ancho de .pull-quote en 350 píxeles.
+
+3. Establezca el ancho de #banner .content h1 en 400 píxeles.
+*/
+
+body {
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navigation li {
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.navigation  li.logo {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+#banner {
+  background-image: url("https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
+  background-size: cover;
+  background-position: bottom center;
+  width: 100%;
+  
+}
+
+#banner .content h1 {
+  position: relative;
+  top: 50px;
+  margin: 0 auto; 
+}
+
+#main {
+  padding: 40px;
+  text-align: center;
+  width: 400px;
+}
+
+h1 {
+  color: white;
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+}
+
+h2 {
+  color: red;
+  font-size: 14px;
+  line-height: 48px;
+  text-align: center;
+}
+
+h3 {
+  color: red;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 20px 10px;
+}
+
+p {
+  color: grey;
+  font-size: 16px;
+  line-height: 48px;
+}
+
+.pull-quote {
+}
+
+.byline {
+  border-bottom: 1px solid LightGrey;
+  border-top: 1px solid LightGrey;
+  color: DarkGrey;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.share {
+  border: 1px solid LightGrey;
+  padding: 40px 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.share a {
+  background: red;
+  border: 1px solid red;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.share a:hover {
+  background: white;
+  border: 1px solid red;
+  color: red;
+}

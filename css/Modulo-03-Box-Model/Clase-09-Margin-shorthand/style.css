@@ -1,0 +1,159 @@
+/*
+Margin Shorthand
+
+¿Qué sucede si no desea márgenes iguales en los cuatro lados de la caja y no tiene tiempo para separar las propiedades de cada lado? ¡Estás de suerte! El margen también se puede escribir como una Shorthand. La sintaxis abreviada de los márgenes es la misma que la del padding, por lo que si se siente cómodo con eso, salte a las instrucciones. De lo contrario, ¡siga leyendo para aprender a usar la abreviatura de margen!
+
+Similar a el shorthand de padding, el shorthand de margen le permite especificar todas las propiedades de margen como valores en una sola línea:
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+
+Puede especificar estas propiedades de diferentes maneras:
+
+4 valores
+
+p {
+  margin: 6px 10px 5px 12px;
+}
+
+En el ejemplo anterior, los cuatro valores 6px 10px 5px 12px corresponden al grosor del margen de cada lado, en sentido horario. En orden, especifica el valor del margen superior (6 px), el valor del margen derecho (10 px), el valor del margen inferior (5 px) y el valor del margen izquierdo (12 px) del contenido.
+
+3 valores
+
+p {
+  margin: 5px 12px 4px;
+}
+
+Si los lados izquierdo y derecho del contenido pueden ser iguales, el Shorthand de margen permite especificar 3 valores. El primer valor establece el valor del margen superior (5 px), el segundo valor establece los valores del margen izquierdo y derecho (12 px) y el tercer valor establece el valor del margen inferior (4 px).
+
+2 valores
+
+p {
+  margin: 20px 10px;
+}
+
+Y finalmente, si los lados superior e inferior pueden ser iguales, y los lados izquierdo y derecho pueden ser iguales, puede especificar 2 valores. El primer valor establece los valores de margen superior e inferior (20 px), y el segundo valor establece los valores de margen izquierdo y derecho (10 px).
+
+*/
+
+/*
+1. Con dos valores, establezca los márgenes superior e inferior h2 en 30 píxeles y los márgenes izquierdo y derecho en 20 píxeles.
+*/
+
+body {
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navigation li {
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding: 20px;
+}
+
+.navigation  li.logo {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+#banner {
+  background-image: url("https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
+  background-size: cover;
+  background-position: bottom center;
+  width: 100%;
+  height: 700px;
+  
+}
+
+#banner .content h1 {
+  position: relative;
+  top: 50px;
+  margin: 0 auto;
+  width: 400px;
+  border: 3px solid white;
+  border-radius: 15px;
+}
+
+#main {
+  padding: 40px;
+  text-align: center;
+  width: 400px;
+}
+
+h1 {
+  color: white;
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+}
+
+h2 {
+  color: red;
+  font-size: 14px;
+  line-height: 48px;
+  text-align: center;
+  border: red dotted 1px;
+  padding: 20px 30px;
+}
+
+h3 {
+  color: red;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 20px 10px;
+}
+
+p {
+  color: grey;
+  font-size: 16px;
+  line-height: 48px;
+  padding: 10px 20px;
+  margin: 60px;
+}
+
+.pull-quote {
+  width: 350px;
+}
+
+.byline {
+  border-bottom: 1px solid LightGrey;
+  border-top: 1px solid LightGrey;
+  color: DarkGrey;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.share {
+  border: 1px solid LightGrey;
+  padding: 40px 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding: 14px;
+}
+
+.share a {
+  background: red;
+  border: 1px solid red;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.share a:hover {
+  background: white;
+  border: 1px solid red;
+  color: red;
+}
