@@ -1,0 +1,63 @@
+/*
+Hue, Saturation, and Lightness
+
+El esquema de color RGB es conveniente porque es muy similar a cómo las computadoras representan los colores internamente. Hay otro sistema igualmente poderoso en CSS llamado esquema de color de tono-saturación-luminosidad, abreviado como HSL.
+
+La sintaxis de HSL es similar a la forma decimal de RGB, aunque difiere en aspectos importantes. El primer número representa el grado del matiz y puede estar entre 0 y 360. El segundo y tercer número son porcentajes que representan la saturación y la luminosidad respectivamente. Aquí hay un ejemplo:
+
+color: hsl (120, 60%, 70%);
+
+Hue es el primer número. Se refiere a un ángulo en una rueda de colores. El rojo es 0 grados, el verde es 120 grados, el azul es 240 grados y luego vuelve al rojo a 360. Puede ver un ejemplo de una rueda de colores en la imagen rueda-color.png en esta carpeta.
+
+rueda de color
+
+La saturación se refiere a la intensidad o pureza del color. La saturación aumenta hacia el 100 % a medida que el color se vuelve más rico. La saturación disminuye hacia el 0% a medida que el color se vuelve más gris.
+
+La luminosidad se refiere a qué tan claro u oscuro es el color. La mitad, o el 50%, es una luminosidad normal. Imagine un atenuador deslizante en un interruptor de luz que comienza a la mitad. Deslizar el atenuador hacia el 100 % hace que el color sea más claro, más cercano al blanco. Deslizar el atenuador hacia el 0 % hace que el color sea más oscuro, más cercano al negro.
+
+HSL es conveniente para ajustar los colores. En RGB, hacer que el color sea un poco más oscuro puede afectar a los tres componentes de color. En HSL, eso es tan fácil como cambiar el valor de luminosidad. HSL también es útil para crear un conjunto de colores que funcionen bien juntos seleccionando varios colores que tengan la misma luminosidad y saturación pero diferentes tonalidades.
+*/
+
+/*
+1. En el navegador hay una página simple con rectángulos de diferentes colores.
+
+En style.css, modifique la luminosidad del color de fondo del selector de clase .midground para que sea del 25 %.
+*/
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  max-width: 75vw;
+}
+
+.midground, .foreground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  margin: 15vh 0 0 15vw;
+  padding: 0;
+  width: 35vw;
+  height: 59vh;
+}
+
+body {
+  background-color: hsl(60, 100%, 80%);
+}
+
+.midground {
+  background-color: hsl(225, 100%, 50%);
+}
+
+.foreground {
+  background-color: hsl(325, 25%, 50%);
+  top: 50px;
+  left: 50px;
+}

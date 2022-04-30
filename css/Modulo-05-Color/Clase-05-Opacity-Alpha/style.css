@@ -1,0 +1,79 @@
+/*
+Opacity and Alpha
+
+Todos los colores que hemos visto hasta ahora han sido opacos o no transparentes. Cuando superponemos dos elementos opacos, nada del elemento inferior se muestra a través del elemento superior. En este ejercicio, cambiaremos la opacidad, o la cantidad de transparencia, de algunos colores para que algunos o todos los elementos inferiores sean visibles a través de un elemento de cobertura.
+
+Para usar la opacidad en el esquema de color HSL, use hsla en lugar de hsl y cuatro valores en lugar de tres. Por ejemplo:
+
+color: hsla(34, 100%, 50%, 0.1);
+
+Los tres primeros valores funcionan igual que hsl. El cuarto valor (que no hemos visto antes) es el alfa. Este último valor a veces se denomina opacidad.
+
+Alfa es un número decimal de cero a uno. Si alfa es cero, el color será completamente transparente. Si alfa es uno, el color será opaco. El valor para semitransparente sería 0,5.
+
+Puede pensar en el valor alfa como "la cantidad de fondo que se mezcla con el primer plano". Cuando el alfa de un color está por debajo de uno, cualquier color detrás de él se combinará. La combinación ocurre para cada píxel; no se produce desenfoque.
+
+El esquema de color RGB tiene una sintaxis similar para la opacidad, rgba. Nuevamente, los primeros tres valores funcionan igual que rgb y el último valor es el alfa. Aquí hay un ejemplo:
+
+color: rgba(234, 45, 98, 0.33);
+
+Un poco poco convencional, pero vale la pena mencionar que los colores hexadecimales también pueden tener un valor alfa. Al agregar un valor hexadecimal de dos dígitos al final de la representación de seis dígitos (#52BC8280), o un valor hexadecimal de un dígito al final de la representación de tres dígitos (#F003), puede cambiar la opacidad de un color hexadecimal. La opacidad hexadecimal varía de 00 (transparente) a FF (opaco).
+
+Alfa solo se puede usar con colores HSL, RGB y hexadecimales; no podemos agregar el valor alfa para nombrar colores como el verde.
+
+Sin embargo, hay una palabra clave de color con nombre para opacidad cero, transparente. Es equivalente a rgba(0, 0, 0, 0) y se usa como cualquier otra palabra clave de color:
+
+color: transparent;
+
+*/
+
+/*
+1. Asigne al elemento con clase .foreground un valor alfa de 0.6. Recuerde cambiar hsl a hsla.
+
+2. Asigne al elemento con clase .midground un valor alfa de 0.4 usando hsla.
+
+Ejecute el código y observe cómo se mezclan todos los colores dependiendo de cómo se superpongan.
+
+3. Modifique el color de fondo del body para que tenga un valor de rgba(0, 255, 0, 0.1).
+
+¿Cómo cambia la opacidad el fondo?
+
+*/
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  max-width: 75vw;
+}
+
+.midground, .foreground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  margin: 15vh 0 0 15vw;
+  padding: 0;
+  width: 35vw;
+  height: 59vh;
+}
+
+body {
+  background-color: hsl(60, 100%, 80%);
+}
+
+.midground {
+  background-color: hsl(225, 100%, 50%);
+}
+
+.foreground {
+  background-color: hsl(325, 25%, 50%);
+  top: 50px;
+  left: 50px;
+}

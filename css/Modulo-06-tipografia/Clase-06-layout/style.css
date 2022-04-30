@@ -1,0 +1,190 @@
+/*
+Text Layout
+
+Ha aprendido cómo se puede definir el texto por familia de fuentes, peso, estilo y transformaciones. Ahora aprenderá sobre algunas formas en que se puede mostrar o distribuir el texto dentro del contenedor del elemento.
+
+1. Espaciado de letras
+
+La propiedad de letter-spacing se utiliza para establecer el espaciado horizontal entre los caracteres individuales de un elemento. No es común establecer el espacio entre letras, pero a veces puede ayudar a la legibilidad de ciertas fuentes o estilos. La propiedad de letter-spacing toma valores de longitud en unidades, como 2px o 0,5em.
+
+p {
+  letter-spacing: 2px;
+}
+
+En el ejemplo anterior, cada carácter en el elemento de párrafo estará separado por 2 píxeles.
+
+2. Espaciado entre palabras
+
+Puede establecer el espacio entre palabras con la propiedad word-spacing. Tampoco es común aumentar el espacio entre las palabras, pero puede ayudar a mejorar la legibilidad del texto en negrita. La propiedad de word-spacing también toma valores de longitud en unidades, como 3px o 0,2em.
+
+h1 {
+  word-spacing: 0.3em;
+}
+
+En el ejemplo anterior, el espacio entre palabras se establece en 0,3 em. Para el espaciado entre palabras, se recomienda usar valores em porque el espaciado se puede configurar en función del tamaño de la fuente.
+
+3. Altura de la línea
+
+Podemos usar la propiedad line-height para establecer la altura que queremos que tenga cada línea que contenga nuestro texto. Los valores de line-height pueden ser un número sin unidades, como 1,2, o un valor de longitud, como 12px, 5% o 2em.
+
+p {
+  line-height: 1.4;
+}
+
+En el ejemplo anterior, la altura entre líneas se establece en 1,4. En general, se prefiere el valor sin unidades, ya que responde según el tamaño de fuente actual. En otras palabras, si la altura de la línea se especifica mediante un número sin unidades, cambiar el tamaño de fuente reajustará automáticamente la altura de la línea.
+
+4. Alineación del texto
+
+La propiedad text-align, con la que quizás ya esté familiarizado por la lección de reglas visuales de CSS, alinea el texto con su elemento contenedor.
+
+h1 {
+  text-align: right;
+}
+
+En el ejemplo anterior, el elemento <h1> está alineado a la derecha, en lugar de a la izquierda predeterminada.
+
+*/
+
+/*
+1. ¡Pongamos estas nuevas propiedades a trabajar! En style.css, establezca el espacio entre letras del elemento <h1> en 0,3 em.
+
+2. En style.css, establezca el espacio entre palabras en el conjunto de reglas .banner p en 0,25 em.
+
+3. En style.css, establezca la altura de la línea en el conjunto de reglas .banner p en 1.4.
+
+4. En style.css, establezca la alineación del texto de los elementos <p> en justify.
+*/
+
+/* Universal Styles */
+html {
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #F2F2F2;  
+    text-align: center;  
+  }
+  
+  h1 {
+    padding: 20px;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    font-family: Georgia;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    padding: 40px 20px 0 20px;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  p {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  
+  }
+  
+  
+  /* Header */
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 900;
+  }
+  
+  .header li {
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  .header a {
+    color: #4A4A4A;
+  }
+  
+  a.home {
+    color: #4D00FF;
+  }
+  
+  
+  /* Banner Section */
+  .banner {
+    margin-top: 74px;
+    padding: 40px 0 100px 0;
+    background-color: #4D00FF;
+  }
+  
+  .banner p {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    color: #ffffff;
+    font-weight: lighter;
+  }
+  
+  
+  /* Editorial Sections */
+  .editorial {
+    padding-bottom: 40px;
+    color: #717171;
+    font-family: 'Trebuchet MS', 'Times New Roman', serif;
+  }
+  
+  /* Font Card Sections */
+  .font-card {
+    padding: 10px 0 40px 0;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .font-card .creator {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-style: italic;
+  }
+  
+  .sample {
+    display: inline-block;  
+    padding: 5px 40px;
+  }
+  
+  .sample .text {
+    color: #4D00FF;
+    font-size: 100px;
+  }
+  
+  .garamond {
+    font-family: Garamond;
+  }
+  
+  .helvetica {
+    font-family: Helvetica;
+  }
+  
+  .space {
+    
+  }
+  
+  .bold {
+    font-weight: 900;
+  }
+  
+  .regular {
+    font-weight: normal;
+  }
+  
+  .italic {
+    font-weight: normal;
+    font-style: italic;
+  }
+  

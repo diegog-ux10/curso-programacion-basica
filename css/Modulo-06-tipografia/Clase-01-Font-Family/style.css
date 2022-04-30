@@ -1,0 +1,191 @@
+/*
+Font-family
+
+Puede recordar del modulo de Reglas visuales que la fuente de un elemento se puede cambiar usando la propiedad font-family.
+
+h1 {
+  font-family: 'Times New Roman';
+}
+
+En el ejemplo anterior, font-family para todos los elementos de encabezado <h1> se ha establecido en Arial.
+
+Hablemos de algunas cosas a tener en cuenta al establecer los valores de font-family.
+
+1. Valores de varias palabras
+
+Al especificar un tipo de letra con varias palabras, como Times New Roman, se recomienda utilizar comillas (' ') para agrupar las palabras, así:
+
+h1 {
+  font-family: 'Times New Roman';
+}
+
+2. Fuentes seguras para la web
+
+Hay una selección de fuentes que aparecerán iguales en todos los navegadores y sistemas operativos. Estas fuentes se conocen como fuentes web seguras. Puede consultar una lista completa de fuentes web seguras aquí:
+
+https://www.cssfontstack.com/
+
+
+Fuentes alternativas y Grupo de Fuentes
+
+Las fuentes web seguras son buenas fuentes alternativas que se pueden usar si su fuente preferida no está disponible.
+
+h1 {
+  font-family: Caslon, Georgia, 'Times New Roman';
+}
+
+En el ejemplo anterior, Georgia y Times New Roman son fuentes alternativas a Caslon. Cuando especifica un grupo de fuentes, tiene lo que se conoce como Un grupo de fuentes. Un grupo de fuentes generalmente contiene una lista de fuentes de aspecto similar. Aquí, el navegador primero intentará usar la fuente Caslon. Si no está disponible, intentará usar una fuente similar, Georgia. Y si Georgia no está disponible, intentará usar Times New Roman.
+
+Serif y Sans-Serif
+
+Quizás se pregunte qué características hacen que una fuente sea similar a otra fuente. Las fuentes Caslon, Georgia y Times New Roman son fuentes Serif. Las fuentes Serif tienen detalles adicionales en los extremos de cada letra, a diferencia de las fuentes Sans-Serif, que no tienen detalles adicionales.
+
+serif y sans-serif también son valores de palabras clave que se pueden agregar como fuente alternativa final si no hay nada más disponible en la pila de fuentes.
+
+h1 {
+  font-family: Caslon, Georgia, 'Times New Roman', serif;
+}
+
+En este último ejemplo, la pila de fuentes tiene 4 fuentes. Si las primeras 3 fuentes no están disponibles, el navegador utilizará cualquier fuente serif que esté disponible en el sistema.
+*/
+
+/*
+1. En style.css, cambie la familia de fuentes del elemento <h1> a Georgia.
+
+2. En style.css, cambie la familia de fuentes de los elementos .editorial a Trebuchet MS.
+
+3. En style.css, use un grupo de fuentes para dar a los elementos .editorial fuentes alternativas de Times New Roman y serif.
+
+*/
+
+/* Universal Styles */
+html {
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #F2F2F2;  
+    text-align: center;  
+  }
+  
+  h1 {
+    padding: 20px;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+  
+  }
+  
+  h2 {
+    padding: 40px 20px 0 20px;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  p {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  
+  }
+  
+  
+  /* Header */
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #fff;
+    font-size: 14px;
+  
+  }
+  
+  .header li {
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  .header a {
+    color: #4A4A4A;
+  }
+  
+  a.home {
+    color: #4D00FF;
+  }
+  
+  
+  /* Banner Section */
+  .banner {
+    margin-top: 74px;
+    padding: 40px 0 100px 0;
+    background-color: #4D00FF;
+  }
+  
+  .banner p {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    color: #ffffff;
+  
+  }
+  
+  
+  /* Editorial Sections */
+  .editorial {
+    padding-bottom: 40px;
+    color: #717171;
+  
+  }
+  
+  /* Font Card Sections */
+  .font-card {
+    padding: 10px 0 40px 0;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .font-card .creator {
+    padding: 10px 20px;
+    font-size: 16px;
+    
+  }
+  
+  .sample {
+    display: inline-block;  
+    padding: 5px 40px;
+  }
+  
+  .sample .text {
+    color: #4D00FF;
+    font-size: 100px;
+  }
+  
+  .garamond {
+    font-family: Garamond;
+  }
+  
+  .helvetica {
+    font-family: Helvetica;
+  }
+  
+  .space {
+    
+  }
+  
+  .bold {
+    font-weight: 900;
+  }
+  
+  .regular {
+    font-weight: normal;
+  }
+  
+  .italic {
+    font-weight: normal;
+    font-style: italic;
+  }

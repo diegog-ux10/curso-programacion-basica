@@ -1,0 +1,171 @@
+/*
+Web Fonts Usando <link>
+
+Los servicios de fuentes en línea, como Google Fonts, facilitan la búsqueda y el enlace a las fuentes de su sitio. Puede buscar y seleccionar fuentes que coincidan con el estilo de su sitio web.
+
+https://fonts.google.com/
+
+Cuando selecciona una fuente en Google Fonts, se le mostrarán todos los diferentes estilos disponibles para esa fuente en particular. A continuación, puede seleccionar los estilos que desea utilizar en su sitio.
+
+Cuando haya terminado de seleccionar una fuente y sus estilos, puede revisar la familia de fuentes seleccionada y se generará automáticamente un elemento <link> para que lo use en su sitio.
+
+<head>
+  <!-- Add the link element for Google Fonts along with other metadata -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+El elemento <link> generado debe agregarse al elemento <head> en su documento HTML para que esté listo para usarse en su CSS.
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+Luego puede crear declaraciones de familia de fuentes en su CSS, ¡tal como aprendió a hacer con otras fuentes!
+*/
+
+/*
+1. La fuente en la parte inferior de la página, en la sección Monoespaciado, debe ser "Space Mono". ¡Vamos a solucionarlo vinculando la fuente Space Mono de Google!
+
+Navegue a Google Fonts y seleccione la fuente "Space Mono". En la lista de variaciones de estilo, busque "Regular 400" y haga clic en "+ Seleccionar este estilo".
+
+Copie el elemento <link> proporcionado y péguelo en el elemento <head> dentro de index.html.
+
+2. En style.css, dentro del conjunto de reglas .space, cree una declaración usando la propiedad font-family, con 'Space Mono', monospace; como el valor.
+*/
+
+/* Universal Styles */
+html {
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #F2F2F2;  
+    text-align: center;  
+  }
+  
+  h1 {
+    padding: 20px;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    font-family: Georgia;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+  }
+  
+  h2 {
+    padding: 40px 20px 0 20px;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  p {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+  }
+  
+  
+  /* Header */
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 900;
+  }
+  
+  .header li {
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  .header a {
+    color: #4A4A4A;
+  }
+  
+  a.home {
+    color: #4D00FF;
+  }
+  
+  
+  /* Banner Section */
+  .banner {
+    margin-top: 74px;
+    padding: 40px 0 100px 0;
+    background-color: #4D00FF;
+  }
+  
+  .banner p {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    color: #ffffff;
+    font-weight: lighter;
+    word-spacing: 0.25em;
+    line-height: 1.4;
+  }
+  
+  
+  /* Editorial Sections */
+  .editorial {
+    padding-bottom: 40px;
+    color: #717171;
+    font-family: 'Trebuchet MS', 'Times New Roman', serif;
+  }
+  
+  /* Font Card Sections */
+  .font-card {
+    padding: 10px 0 40px 0;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .font-card .creator {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-style: italic;
+  }
+  
+  .sample {
+    display: inline-block;  
+    padding: 5px 40px;
+  }
+  
+  .sample .text {
+    color: #4D00FF;
+    font-size: 100px;
+  }
+  
+  .garamond {
+    font-family: Garamond;
+  }
+  
+  .helvetica {
+    font-family: Helvetica;
+  }
+  
+  .space {
+    
+  }
+  
+  .bold {
+    font-weight: 900;
+  }
+  
+  .regular {
+    font-weight: normal;
+  }
+  
+  .italic {
+    font-weight: normal;
+    font-style: italic;
+  }
+  
