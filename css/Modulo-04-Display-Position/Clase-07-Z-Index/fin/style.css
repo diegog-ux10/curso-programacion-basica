@@ -8,6 +8,7 @@ header {
   border-bottom: 1px solid #466995;
   position: fixed;
   width: 100%;
+  z-index: 10;
 }
 
 ul {
@@ -87,10 +88,8 @@ footer {
 
 .question {
   text-align: center;
-  position: sticky;
+  position: relative;
   top: 40px;
-  border: 15px solid #DBE9EE;
-  background-color: white;
 }
 
 .answer {

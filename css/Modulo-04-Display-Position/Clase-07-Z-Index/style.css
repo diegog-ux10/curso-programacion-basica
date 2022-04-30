@@ -1,0 +1,145 @@
+/*
+Índice Z
+
+Cuando los recuadros en una página web tienen una combinación de diferentes posiciones, los recuadros (y por lo tanto, su contenido) pueden superponerse entre sí, lo que dificulta la lectura o el consumo del contenido.
+
+.blue-box {
+  background-color: blue;
+}
+ 
+.green-box {
+  background-color: green;
+  position: relative;
+  top: -170px;
+  left: 170px;
+}
+
+En el ejemplo anterior, el elemento .green-box se superpone sobre el elemento .blue-box.
+
+La propiedad z-index controla qué tan atrás o qué tan adelante debe aparecer un elemento en la página web cuando los elementos se superponen. Esto se puede considerar como la profundidad de los elementos, con elementos más profundos que aparecen detrás de elementos menos profundos.
+
+La propiedad z-index acepta valores enteros. Dependiendo de sus valores, los números enteros indican al navegador el orden en que los elementos deben colocarse en capas en la página web.
+
+.blue-box {
+  background-color: blue;
+  position: relative;
+  z-index: 1;
+}
+ 
+.green-box {
+  background-color: green;
+  position: relative;
+  top: -170px;
+  left: 170px;
+}
+
+En el ejemplo anterior, configuramos la posición de .blue-box en relativa y el z-index en 1. Cambiamos la posición a relativa porque la propiedad del z-index no funciona en elementos estáticos. El z-index de 1 mueve el elemento .blue-box hacia adelante, porque el valor del z-index no se ha especificado explícitamente para el elemento .green-box, lo que significa que tiene un valor de z-index predeterminado de 0.
+
+*/
+
+/*
+1. En style.css, establezca el z-index del header en 10. Observe cómo el encabezado ya no está cubierto por otros elementos cuando se desplaza.
+*/
+
+body {
+  background-color: #FFF;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #466995;
+  border-bottom: 1px solid #466995;
+  position: fixed;
+  width: 100%;
+}
+
+ul {
+  margin: 30px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+li {
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+li:hover {
+  color: #DBE9EE;
+}
+
+h1 {
+  color: #466995;
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #333;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 26px;
+  font-weight: 100;
+  margin: 0 auto 20px auto;
+}
+
+h3 {
+  color: #466995;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 30px;
+}
+
+h4 {
+  color: #466995;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase
+}
+
+p {
+  color: #333;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 18px;
+}
+
+footer {
+  background-color: #DBE9EE;
+  text-align: center;
+}
+
+.welcome {
+  background-color: #DBE9EE;
+  box-sizing: border-box;
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  top: 200px;
+}
+
+.question {
+  text-align: center;
+  position: relative;
+  top: 40px;
+}
+
+.answer {
+  border: 1px solid #466995;
+  margin: 20px;
+}
+
+.answer:hover {
+  background: #C0D6DF;
+  color: #FFF;
+}

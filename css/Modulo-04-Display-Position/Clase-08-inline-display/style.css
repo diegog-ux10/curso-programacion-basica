@@ -1,0 +1,134 @@
+/*
+Inline Display
+
+Cada elemento HTML tiene un valor de display predeterminado que dicta si puede compartir el espacio horizontal con otros elementos. Algunos elementos ocupan todo el navegador de izquierda a derecha, independientemente del tamaño de su contenido. Otros elementos solo ocupan el espacio horizontal que requiere su contenido y pueden estar directamente al lado de otros elementos.
+
+En esta lección, cubriremos tres valores para la propiedad de display: inline, block y inline-block.
+
+Display predeterminada de algunos elementos, como <em>, <strong> y <a>, se llama inline. Los elementos inline tienen un cuadro que envuelve firmemente su contenido, ocupando solo la cantidad de espacio necesario para mostrar su contenido y no requiere una nueva línea después de cada elemento. La altura y el ancho de estos elementos no se pueden especificar en el documento CSS. Por ejemplo, el texto de una etiqueta de ancla (<a>) se mostrará, de forma predeterminada, en la misma línea que el texto circundante, y solo tendrá el ancho necesario para contener su contenido. los elementos inline no se pueden modificar en tamaño con las propiedades CSS de height o width.
+
+Para obtener más información sobre los elementos inline:
+
+https://developer.mozilla.org/es/docs/Web/HTML/Inline_elements
+
+
+
+To learn more about <em>inline</em> elements, read <a href="#">MDN documentation</a>.   
+
+En el ejemplo anterior, el elemento <em> está inline porque muestra su contenido en la misma línea que el contenido que lo rodea, incluida la etiqueta de a.
+
+La propiedad de visualización CSS proporciona la capacidad de convertir cualquier elemento en un elemento inline. Esto incluye elementos que no están inline de forma predeterminada, como p, div y header.
+
+h1 {
+  display: inline;
+}
+
+El CSS del ejemplo anterior cambiará la display de todos los elementos <h1> a inline. El navegador representará los elementos <h1> en la misma línea que otros elementos inline inmediatamente antes o después de ellos (si los hay).
+*/
+
+/*
+1. En index.html, agregue etiquetas de apertura y cierre <strong></strong> alrededor de la palabra "Welcome". Observe que el elemento no se mueve. Esto se debe a que los elementos <strong> están en línea, por lo que pueden compartir líneas con otros elementos.
+*/
+body {
+  background-color: #FFF;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #466995;
+  border-bottom: 1px solid #466995;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+ul {
+  margin: 30px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+li {
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+li:hover {
+  color: #DBE9EE;
+}
+
+h1 {
+  color: #466995;
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #333;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 26px;
+  font-weight: 100;
+  margin: 0 auto 20px auto;
+}
+
+h3 {
+  color: #466995;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 30px;
+}
+
+h4 {
+  color: #466995;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase
+}
+
+p {
+  color: #333;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 18px;
+}
+
+footer {
+  background-color: #DBE9EE;
+  text-align: center;
+}
+
+.welcome {
+  background-color: #DBE9EE;
+  box-sizing: border-box;
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  top: 200px;
+}
+
+.question {
+  text-align: center;
+  position: relative;
+  top: 40px;
+}
+
+.answer {
+  border: 1px solid #466995;
+  margin: 20px;
+}
+
+.answer:hover {
+  background: #C0D6DF;
+  color: #FFF;
+}

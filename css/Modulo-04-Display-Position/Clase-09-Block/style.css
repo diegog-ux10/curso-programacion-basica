@@ -1,0 +1,127 @@
+/*
+Display: Block
+
+Algunos elementos no se muestran en la misma línea que el contenido que los rodea. Estos se denominan elementos block-level. Estos elementos ocupan todo el ancho de la página de forma predeterminada, pero también se puede establecer su propiedad de ancho. Salvo que se especifique lo contrario, tienen la altura necesaria para acomodar su contenido.
+
+Los elementos que están block-level por defecto incluyen todos los niveles de elementos de encabezado (<h1> a <h6>), <p>, <div> y <footer>. Para obtener una lista completa de elementos block-level, visite la documentación de MDN.
+
+https://developer.mozilla.org/es/docs/Web/HTML/Block-level_elements
+
+strong {
+  display: block;
+}
+
+En el ejemplo anterior, todos los elementos <strong> se mostrarán en su propia línea, sin contenido directamente a cada lado de ellos, aunque es posible que su contenido no ocupe el ancho de la mayoría de las pantallas de las computadoras.
+
+*/
+/*
+1. En index.html, agregue un elemento <footer> en la parte inferior del documento, justo encima de la etiqueta de cierre </body>.
+
+2. ¡Nada ha cambiado! Eso es porque el elemento <footer> está vacío. Agregue un elemento <h3> dentro del footer que diga "Thanks for taking our survey!"
+
+3. Para mejorar la apariencia de la página web, establezca la altura del footer en 100 píxeles en style.css.
+*/
+
+body {
+    background-color: #FFF;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-color: #466995;
+    border-bottom: 1px solid #466995;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  ul {
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  li {
+    color: #FFF;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  
+  li:hover {
+    color: #DBE9EE;
+  }
+  
+  h1 {
+    color: #466995;
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    color: #333;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 26px;
+    font-weight: 100;
+    margin: 0 auto 20px auto;
+  }
+  
+  h3 {
+    color: #466995;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 30px;
+  }
+  
+  h4 {
+    color: #466995;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase
+  }
+  
+  p {
+    color: #333;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+  }
+  
+  footer {
+    background-color: #DBE9EE;
+    text-align: center;
+  }
+  
+  .welcome {
+    background-color: #DBE9EE;
+    box-sizing: border-box;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    top: 200px;
+  }
+  
+  .question {
+    text-align: center;
+    position: relative;
+    top: 40px;
+  }
+  
+  .answer {
+    border: 1px solid #466995;
+    margin: 20px;
+  }
+  
+  .answer:hover {
+    background: #C0D6DF;
+    color: #FFF;
+  }

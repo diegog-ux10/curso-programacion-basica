@@ -1,0 +1,143 @@
+/*
+Display: Inline-Block
+
+El tercer valor para la propiedad de display es inline-block. La display de inline-block combina características de elementos inline y de block. Los elementos de inline-block pueden aparecer uno al lado del otro y podemos especificar sus dimensiones usando las propiedades de width y height. Las img son el mejor ejemplo de elementos de inline-block predeterminados.
+
+Echemos un vistazo al código:
+
+<div class="rectangle">
+  <p>I’m a rectangle!</p>
+</div>
+<div class="rectangle">
+  <p>So am I!</p>
+</div>
+<div class="rectangle">
+  <p>Me three!</p>
+</div>
+
+.rectangle {
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+}
+
+Hay tres divs rectangulares que contienen cada uno un párrafo de texto. Los <div> .rectangle aparecerán en línea (siempre que haya suficiente espacio de izquierda a derecha) con un ancho de 200 píxeles y una altura de 300 píxeles, aunque el texto dentro de ellos no requiera 200 píxeles por 300 píxeles de espacio.
+
+*/
+
+/*
+1. Arreglemos el display  de los elementos de la lista en el menú en la parte superior de la página.
+
+Establezca la propiedad de display de los elementos <li> en inline-block.
+
+2. Establezca el ancho de los elementos li en 80 píxeles.
+
+3. Ahora, podemos reducir el desplazamiento superior de la sección welcome. Establézcalo en 50 píxeles.(top)
+
+4. Establezca la propiedad de display de los elementos .answer en inline-block.
+*/
+
+body {
+    background-color: #FFF;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-color: #466995;
+    border-bottom: 1px solid #466995;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  ul {
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  li {
+    color: #FFF;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  
+  li:hover {
+    color: #DBE9EE;
+  }
+  
+  h1 {
+    color: #466995;
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    color: #333;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 26px;
+    font-weight: 100;
+    margin: 0 auto 20px auto;
+  }
+  
+  h3 {
+    color: #466995;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 30px;
+  }
+  
+  h4 {
+    color: #466995;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase
+  }
+  
+  p {
+    color: #333;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+  }
+  
+  footer {
+    background-color: #DBE9EE;
+    text-align: center;
+    height: 100px;
+  }
+  
+  .welcome {
+    background-color: #DBE9EE;
+    box-sizing: border-box;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    top: 200px;
+  }
+  
+  .question {
+    text-align: center;
+    position: relative;
+    top: 40px;
+  }
+  
+  .answer {
+    border: 1px solid #466995;
+    margin: 20px;
+  }
+  
+  .answer:hover {
+    background: #C0D6DF;
+    color: #FFF;
+  }

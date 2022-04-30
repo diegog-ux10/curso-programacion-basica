@@ -1,0 +1,140 @@
+/*
+Float
+
+Hasta ahora, ha aprendido a especificar la posición exacta de un elemento mediante las propiedades desplazamiento. Si simplemente está interesado en mover un elemento lo más a la izquierda o lo más a la derecha posible en el contenedor, puede usar la propiedad float.
+
+La propiedad float se usa comúnmente para envolver texto alrededor de una imagen. Tenga en cuenta, sin embargo, que mover elementos hacia la izquierda o hacia la derecha con fines de diseño es más adecuado para herramientas como la CSS grid y flexbox, que aprenderá más adelante.
+
+La propiedad float a menudo se establece utilizando uno de los valores a continuación:
+
+left: mueve, o hace flotar, los elementos lo más a la izquierda posible.
+right: mueve los elementos lo más a la derecha posible.
+
+.green-section {
+  width: 50%;
+  height: 150px;
+}
+ 
+.orange-section {
+  background-color: orange;
+  width: 50%;
+  float: right;
+}
+
+En el ejemplo anterior, hacemos flotar el elemento .orange-section a la derecha. Esto funciona para elementos posicionados static y relative.
+
+Los elementos floats deben tener un ancho especificado, como en el ejemplo anterior. De lo contrario, el elemento asumirá el ancho completo del elemento que lo contiene, y cambiar el valor float no producirá ningún resultado visible.
+
+*/
+
+/*
+1. Agregue una declaración al conjunto de reglas .answer que establezca la propiedad float a la izquierda.
+*/
+
+body {
+    background-color: #FFF;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-color: #466995;
+    border-bottom: 1px solid #466995;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  ul {
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  li {
+    color: #FFF;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 80px;  
+  }
+  
+  li:hover {
+    color: #DBE9EE;
+  }
+  
+  h1 {
+    color: #466995;
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    color: #333;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 26px;
+    font-weight: 100;
+    margin: 0 auto 20px auto;
+  }
+  
+  h3 {
+    color: #466995;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 30px;
+  }
+  
+  h4 {
+    color: #466995;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase
+  }
+  
+  p {
+    color: #333;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+  }
+  
+  footer {
+    background-color: #DBE9EE;
+    text-align: center;
+    height: 100px;
+  }
+  
+  .welcome {
+    background-color: #DBE9EE;
+    box-sizing: border-box;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    top: 50px;
+  }
+  
+  .question {
+    text-align: center;
+    position: relative;
+    top: 40px;
+  }
+  
+  .answer {
+    border: 1px solid #466995;
+    margin: 20px;
+    display: inline-block;
+  }
+  
+  .answer:hover {
+    background: #C0D6DF;
+    color: #FFF;
+  }

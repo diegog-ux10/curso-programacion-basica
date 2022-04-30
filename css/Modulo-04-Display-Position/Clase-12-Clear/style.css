@@ -1,0 +1,143 @@
+/*
+Clear
+
+La propiedad float también se puede usar para hacer flotar varios elementos a la vez. Sin embargo, cuando varios elementos floats tienen diferentes alturas, puede afectar su diseño en la página. Específicamente, los elementos pueden "chocar" entre sí y no permitir que otros elementos se muevan correctamente hacia la izquierda o hacia la derecha.
+
+La propiedad clear especifica cómo deben comportarse los elementos cuando chocan entre sí en la página. Puede tomar uno de los siguientes valores:
+
+left: el lado izquierdo del elemento no tocará ningún otro elemento dentro del mismo elemento contenedor.
+right: el lado derecho del elemento no tocará ningún otro elemento dentro del mismo elemento contenedor.
+both: ningún lado del elemento tocará ningún otro elemento dentro del mismo elemento contenedor.
+none: el elemento puede tocar cualquier lado.
+
+
+div {
+  width: 200px;
+  float: left;
+}
+ 
+div.special {
+  clear: left;
+}
+
+En el ejemplo anterior, todos los <div> de la página flotan hacia el lado izquierdo. El elemento con clase especial no se movió completamente hacia la izquierda porque un <div> más alto bloqueó su posicionamiento. Al establecer su propiedad clear a la izquierda, el <div> especial se moverá completamente hacia el lado izquierdo de la página.
+
+*/
+
+/*
+1. Eche un vistazo a los divs .answer en la página web. Han flotado hacia la izquierda, pero los divs .question están tocando los divs .answer a la derecha, arreglemos esto.
+
+En el selector .question, establezca la propiedad clear a la izquierda. Observe cómo se movieron las preguntas.
+
+2.Pensándolo bien, este diseño no se ve tan bien. Elimine la propiedad flotante del conjunto de reglas del selector .answer.
+
+*/
+
+body {
+    background-color: #FFF;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-color: #466995;
+    border-bottom: 1px solid #466995;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  ul {
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  li {
+    color: #FFF;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 80px;  
+  }
+  
+  li:hover {
+    color: #DBE9EE;
+  }
+  
+  h1 {
+    color: #466995;
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    color: #333;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 26px;
+    font-weight: 100;
+    margin: 0 auto 20px auto;
+  }
+  
+  h3 {
+    color: #466995;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 30px;
+  }
+  
+  h4 {
+    color: #466995;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase
+  }
+  
+  p {
+    color: #333;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+  }
+  
+  footer {
+    background-color: #DBE9EE;
+    text-align: center;
+    height: 100px;
+  }
+  
+  .welcome {
+    background-color: #DBE9EE;
+    box-sizing: border-box;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    top: 50px;
+  }
+  
+  .question {
+    text-align: center;
+    position: relative;
+    top: 40px;
+  }
+  
+  .answer {
+    border: 1px solid #466995;
+    margin: 20px;
+    display: inline-block;
+    float: left;
+  }
+  
+  .answer:hover {
+    background: #C0D6DF;
+    color: #FFF;
+  }
