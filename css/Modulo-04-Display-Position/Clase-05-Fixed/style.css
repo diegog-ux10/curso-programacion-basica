@@ -1,0 +1,128 @@
+/*
+Position: Fixed
+
+Cuando la posición de un elemento se establece en absoluta, como en el último ejercicio, el elemento se desplazará con el resto del documento cuando un usuario se desplace.
+
+Podemos fijar un elemento en una posición específica de la página (independientemente del desplazamiento del usuario) configurando su posición como fixed y acompañándolo con las conocidas propiedades de desplazamiento top, bottom, left y right.
+
+.title {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+En el ejemplo anterior, el elemento .title permanecerá fijo en su posición sin importar dónde se desplace el usuario en la página.
+
+Esta técnica se usa a menudo para las barras de navegación en una página web.
+
+*/
+
+/*
+1. En style.css, cambie la propiedad de posición dentro de la regla del header a fixed. Desplácese hacia arriba y hacia abajo en la página web. ¿Que notaste?
+
+2. Observe que parte de la sección "Bienvenido" ahora está cubierta por el encabezado. Eso es porque cuando cambiamos la posición del encabezado a fixed, lo eliminamos del flujo del documento html. Arreglemos eso. Establezca la posición del elemento .welcome en relativa.
+
+3. Compensa la sección "Bienvenido" en 200 píxeles desde la parte superior. Es posible que todo no se muestre correctamente todavía; lo arreglaremos en un ejercicio posterior.
+
+*/
+
+body {
+    background-color: #FFF;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-color: #466995;
+    border-bottom: 1px solid #466995;
+    position: absolute;
+    width: 100%;
+  }
+  
+  ul {
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  li {
+    color: #FFF;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  
+  li:hover {
+    color: #DBE9EE;
+  }
+  
+  h1 {
+    color: #466995;
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    color: #333;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 26px;
+    font-weight: 100;
+    margin: 0 auto 20px auto;
+  }
+  
+  h3 {
+    color: #466995;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 30px;
+  }
+  
+  h4 {
+    color: #466995;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase
+  }
+  
+  p {
+    color: #333;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+  }
+  
+  footer {
+    background-color: #DBE9EE;
+    text-align: center;
+  }
+  
+  .welcome {
+    background-color: #DBE9EE;
+    box-sizing: border-box;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .question {
+    text-align: center;
+    position: relative;
+    top: 40px;
+  }
+  
+  .answer {
+    border: 1px solid #466995;
+    margin: 20px;
+  }
+  
+  .answer:hover {
+    background: #C0D6DF;
+    color: #FFF;
+  }

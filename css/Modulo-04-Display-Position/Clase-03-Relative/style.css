@@ -1,0 +1,139 @@
+/*
+Position: Relative
+
+Una forma de modificar la posición predeterminada de un elemento es establecer su propiedad de posición en relativa.
+
+Este valor le permite colocar un elemento en relación con su posición estática predeterminada en la página web.
+
+.green-box {
+  background-color: green;
+  position: relative;
+}
+
+Aunque el código del ejemplo anterior le indica al navegador que espere un posicionamiento relativo del elemento .green-box, no especifica dónde debe colocarse el elemento .green-box en la página. Esto se hace acompañando la declaración de posición con una o más de las siguientes propiedades de desplazamiento que alejarán el elemento de su posición estática predeterminada:
+
+top: mueve el elemento hacia abajo desde la parte superior.
+
+bottom: mueve el elemento hacia arriba desde la parte inferior.
+
+left: aleja el elemento del lado izquierdo (hacia la derecha).
+
+right: aleja el elemento del lado derecho (hacia la izquierda).
+
+Puede especificar valores en píxeles, ems o porcentajes, entre otros, para marcar exactamente qué tan lejos necesita que se mueva el elemento. También es importante tener en cuenta que las propiedades de compensación no funcionarán si la propiedad position del elemento es la static predeterminada.
+
+.green-box {
+  background-color: green;
+  position: relative;
+  top: 50px;
+  left: 120px;
+}
+
+En el ejemplo anterior, el elemento de la clase de caja verde se moverá 50 píxeles hacia abajo y 120 píxeles hacia la derecha desde su posición estática predeterminada.
+
+Desplazar el elemento relativo no afectará el posicionamiento de otros elementos.
+*/
+
+/*
+1. En style.css, dentro del conjunto de reglas .question, cambie la propiedad de posición a relativa.
+
+2. A continuación, en style.css, desplace .question 40 píxeles desde la parte superior.
+*/
+
+body {
+    background-color: #FFF;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-color: #466995;
+    border-bottom: 1px solid #466995;
+  }
+  
+  ul {
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  li {
+    color: #FFF;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  
+  li:hover {
+    color: #DBE9EE;
+  }
+  
+  h1 {
+    color: #466995;
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    color: #333;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 26px;
+    font-weight: 100;
+    margin: 0 auto 20px auto;
+  }
+  
+  h3 {
+    color: #466995;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 30px;
+  }
+  
+  h4 {
+    color: #466995;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase
+  }
+  
+  p {
+    color: #333;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+  }
+  
+  footer {
+    background-color: #DBE9EE;
+    text-align: center;
+  }
+  
+  .welcome {
+    background-color: #DBE9EE;
+    box-sizing: border-box;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .question {
+    text-align: center;
+    position: static;
+  }
+  
+  .answer {
+    border: 1px solid #466995;
+    margin: 20px;
+  }
+  
+  .answer:hover {
+    background: #C0D6DF;
+    color: #FFF;
+  }
