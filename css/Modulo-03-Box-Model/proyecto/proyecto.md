@@ -11,6 +11,7 @@ Los archivos index.html y style.css existentes del sitio web se muestran en el l
 Revisará el elemento del menú de Davie's Burger con cuidado de arriba a abajo. Comencemos con el estilo del elemento *nav* que contiene el logotipo y los elementos de navegación.
 
 - Establezca el ancho de *img* en *180* píxeles.
+
 - Centre la imagen horizontalmente usando la propiedad de *margin*.
 
 ### 2
