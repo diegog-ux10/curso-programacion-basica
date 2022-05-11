@@ -11,7 +11,7 @@ Los tipos de datos son las clasificaciones que damos a los diferentes tipos de d
 
 - Null: este tipo de datos representa la ausencia intencional de un valor y se representa mediante la palabra clave null (sin comillas).
 
-- Undefined: este tipo de datos se indica con la palabra clave indefinido (sin comillas).También representa la ausencia de un valor aunque tiene un uso diferente a null. indefinido significa que un valor dado no existe.
+- Undefined: También representa la ausencia de un valor aunque tiene un uso diferente a null. indefinido significa que un valor dado no existe.
 
 - Symbol: una característica más nueva del lenguaje, los símbolos son identificadores únicos, útiles en la codificación más compleja. No hay necesidad de preocuparse por esto por ahora.
 

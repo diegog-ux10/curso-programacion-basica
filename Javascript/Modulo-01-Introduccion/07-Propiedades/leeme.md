@@ -1,6 +1,6 @@
 # Properties
 
-Cuando introduce un nuevo dato en un programa JavaScript, el navegador lo guarda como una instancia de ese tipo de datos. Todos los tipos de datos tienen acceso a propiedades específicas que pueden ser usadas en cada instancia. Por ejemplo, cada instancia de un string tiene una propiedad llamada .length que almacena la cantidad de caracteres en ese string. Puedes traer la información de esa propiedad agregando junto al string el nombre de la propiedad, separada por un punto:
+Cuando introduce un nuevo dato a JavaScript, el navegador lo guarda como una instancia de ese tipo de datos. Todos los tipos de datos tienen acceso a propiedades específicas que pueden ser usadas en cada instancia. Por ejemplo, cada instancia de un string tiene una propiedad llamada .length que almacena la cantidad de caracteres en ese string. Puedes traer la información de esa propiedad agregando junto al string el nombre de la propiedad, separada por un punto:
 
 ~~~
 

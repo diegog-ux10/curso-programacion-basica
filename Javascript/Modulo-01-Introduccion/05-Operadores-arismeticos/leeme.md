@@ -14,10 +14,10 @@ Los primeros cuatro funcionan como podras adivinar:
 
 ~~~
 
-consola.log(3 + 4); // Imprime 7
-consola.log(5 - 1); // Imprime 4
-consola.log(4 * 2); // Imprime 8
-consola.log(9 / 3); // Imprime 3
+console.log(3 + 4); // Imprime 7
+console.log(5 - 1); // Imprime 4
+console.log(4 * 2); // Imprime 8
+console.log(9 / 3); // Imprime 3
 
 ~~~
 
@@ -25,8 +25,8 @@ Tenga en cuenta que la computadora evaluará la expresión dentro de los parént
 
 ~~~
 
-consola.log(11 % 3); // Imprime 2
-consola.log(12 % 3); // Imprime 0
+console.log(11 % 3); // Imprime 2
+console.log(12 % 3); // Imprime 0
 
 ~~~
 
