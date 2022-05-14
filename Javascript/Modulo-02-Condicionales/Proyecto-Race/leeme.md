@@ -47,7 +47,7 @@ Agregue 1000 a su número de carrera si esto es cierto.
 
 Cree una declaración de flujo de control separada, debajo de la primera (comenzando con if nuevamente). Esta declaración verificará la edad y el tiempo de registro para determinar la hora de la carrera.
 
-Para los corredores mayores de 18 años que se registraron temprano, registren una declaración en la consola diciéndoles que correrán a las 9:30 am. Incluya su número de carrera.
+Para los corredores mayores de 18 años que se registraron temprano, imprima en la consola una declaración diciéndoles que correrán a las 9:30 am. Incluya su número de carrera.
 
 ### 6
 
@@ -61,7 +61,7 @@ Dentro de eso, registre una cadena en la consola diciéndoles que competirán a 
 
 “Los jóvenes que se registraron corren a las 12:30 p. m. (independientemente de la hora de registro)”
 
-Para las personas menores de 18 años, registre una declaración en la consola diciéndoles que competirán a las 12:30 p. m. Incluya su número de carrera.
+Para las personas menores de 18 años, registre una declaración en la consola diciéndoles que competirán a las 12:30 p.m. Incluya su número de carrera.
 
 ### 8
 
