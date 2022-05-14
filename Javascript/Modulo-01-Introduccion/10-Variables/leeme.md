@@ -4,7 +4,7 @@ En programación, una variable es un contenedor de un valor o dato. Puede pensar
 
 Las variables también proporcionan una forma de etiquetar datos con un nombre descriptivo, de modo que nuestros programas puedan ser entendidos más claramente por el lector y por nosotros mismos.
 
-En resumen, las variables etiquetan y almacenan datos en la memoria. Solo hay algunas cosas que puede hacer con las variables:
+En resumen, las variables etiquetan y almacenan datos en la memoria. Hay algunas cosas que puede hacer con las variables:
 
 - Crear una variable con un nombre descriptivo.
 - Almacenar o actualizar información almacenada en una variable.
