@@ -20,7 +20,7 @@ Debajo de esta variable, cree una expresión ternaria que decida qué hacer si e
 
 ### 3
 
-Cree una variable llamada userQuestion. El valor de la variable debe ser un string que osea la pregunta que el usuario quiere hacerle a la esfera magica.
+Cree una variable llamada userQuestion. El valor de la variable debe ser un string que sea la pregunta que el usuario quiere hacerle a la esfera magica.
 
 ### 4
 
@@ -57,6 +57,6 @@ Si el randomNumber es 0, guarde una respuesta a la variable magicBall; si random
 
 Si quieres práctica extra:
 
-Si comenzó con una declaración de seitch, conviértala en declaraciones if/else.
+Si comenzó con una declaración de switch, conviértala en declaraciones if/else.
 
-Si comenzó con sentencias if/else if/else, conviértalas en una sentencia switch.
+Si comenzó con sentencias if/else, conviértalas en una sentencia switch.
