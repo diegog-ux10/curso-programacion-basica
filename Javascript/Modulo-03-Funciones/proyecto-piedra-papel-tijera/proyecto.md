@@ -64,7 +64,7 @@ Abordemos primero la condición de empate. Dentro de la función determineWinner
 
 Si el juego no es un empate, deberá determinar un ganador.
 
-Comience escribiendo una declaración if que verifique si la elección del usuario es 'rock'. Dentro del bloque de esa sentencia if, escribe otra sentencia if/else. El if/else interno debe verificar si computerChoice es 'papel'. Si es así, devuelva un mensaje de que la computadora ganó. Si no, devuelve un mensaje de que el usuario ganó.
+Comience escribiendo una declaración if que verifique si la elección del usuario es 'piedra'. Dentro del bloque de esa sentencia if, escribe otra sentencia if/else. El if/else interno debe verificar si computerChoice es 'papel'. Si es así, devuelva un mensaje de que la computadora ganó. Si no, devuelve un mensaje de que el usuario ganó.
 
 ### 9
 

@@ -1,0 +1,1 @@
+const objectives = ['Aprender Ingles', 'Leer dos Libros', 'Correr un maraton'];

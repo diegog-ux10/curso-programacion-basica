@@ -31,7 +31,7 @@ Nota lo siguiente:
 
 Aunque la reasignación está permitida y no obtendremos un error, si decidimos usar num más tarde, sin saberlo, usaremos el nuevo valor de num.
 
-Si bien es importante saber qué es el alcance global, es una buena práctica no definir variables en el alcance global.
+Es una buena práctica no definir variables en el alcance global.
 
 ## Ejercicios
 
